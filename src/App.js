@@ -6,6 +6,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>CS 5610 Web Development</h1>
+        <h2>Tuiter React App</h2>
+        <h3>Francisco Rovirosa</h3>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
