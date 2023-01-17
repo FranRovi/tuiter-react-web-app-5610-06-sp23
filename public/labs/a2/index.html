@@ -2,9 +2,18 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Assignment 2 HTML</title>
     </head>
     <body>
+        <h1 name="table-of-content">Table of content</h1>
+        <ul>
+            <li><a href="#embedding-website">Embedding other websites</a></li>
+            <li><a href="#embedding-youtube">Embedding YouTube videos</a></li>
+            <li><a href="#embedding-slide">Embedding Google slide</a></li>
+            <li><a href="#rectangle">Drawing Rectangles</a></li>
+            <li><a href="#circle">Drawing Circles</a></li>
+            <li><a href="#polygon">Drawing Polygons</a></li>
+        </ul>
         <h1>HTML Examples</h1>
 
         <h2>Heading Tags</h2>
@@ -202,5 +211,42 @@
         <input type="checkbox" value="FANTASY"
             name="check-genre" id="chkbox-fantasy"/>
         <label for="chkbox-fantasy">Fantasy</label>
+        <a name="embedding-website"></a>
+        <h2>Embedding other websites</h2>
+        <a href="#top">Top</a><br/>
+        <iframe width="600" height="400"
+        src="https://www.northeastern.edu/">
+        </iframe>
+        <a name="embedding-youtube"></a>
+        <h2>Embedding YouTube</h2>
+        <a href="#top">Top</a><br/>
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/AY9rspUD6s0" title="2022 Campus Clips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </iframe>
+        <a name="embedding-slide"></a>
+        <h2>Embedding Google slides</h2>
+        <a href="#top">Top</a><br/>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTz4xf7DM44QcuDiERfgfem2Gn2dAq2oNEYIabVpLt2NiN6ETNTJwA_oT7ZNIgmeCr4UpJUUIjUXMFL/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <a name="rectangle"></a>
+        <h2>Drawing rectangles</h2>
+        <a href="#top">Top</a><br/>
+        <svg width="200" height="100">
+        <rect width="200" height="100"
+                style="fill:rgb(5, 184, 151); stroke-width:8;
+        stroke:rgba(169, 147, 104, 0.473)" />
+        </svg>
+        <a name="circle"></a>
+        <h2>Drawing circles</h2>
+        <a href="#top">Top</a><br/>
+        <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"
+                stroke="cyan" stroke-width="4" fill="purple" />
+        </svg>
+        <a name="polygon"></a>
+        <h2>Drawing polygons</h2>
+        <a href="#top">Top</a><br/>
+        <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+                    style="fill:red; stroke:orange; stroke-width:5; fill-rule:evenodd;" />
+        </svg>
     </body>
 </html>
