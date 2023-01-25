@@ -1,0 +1,42 @@
+.ft-secondary{
+    color: gray;
+}
+
+.ft-bold{
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+
+.input-txt{
+    width:75%;
+    background-color: gray;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 50px;
+    border:none;
+}
+
+.disp-flex{
+    display: flex;
+    justify-content: space-between;
+    width:85%
+}
+
+.ul-no-style{
+    list-style: none;
+    
+}
+a {
+    outline: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.15em;
+    color: rgb(110, 118,125);
+}
+.active-link{
+    color: rgb(29,161,242);
+    border-bottom:4px solid rgb(29,161,242);
+    padding-bottom:3px;
+}
+
+
