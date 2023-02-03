@@ -1,42 +1,105 @@
-.ft-secondary{
-    color: gray;
+.wd-margin-left{
+    margin-left: 5px;
 }
 
-.ft-bold{
-    font-weight: bolder;
-    font-size: 1.25em;
+.wd-border{
+    border-color:rgb(47,51,54);
+    border-width: 1px;
+    border-style: solid;
 }
 
-.input-txt{
-    width:75%;
-    background-color: gray;
-    border-radius: 50px;
-    padding: 10px;
-    padding-left: 50px;
-    border:none;
+.wd-border-bottom{
+    border-color:rgb(47,51,54);
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    /* border-bottom: 4px; */
+}
+.wd-border-round-btm{
+    border-color:rgb(47,51,54);
+    border-width: 1px;
+    /* border-width: 0px 0px 2px 0px; */
+    border-style: solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
-.disp-flex{
+.wd-heading {
+    padding-top: 12px;
+    padding-left: 16px;
+}
+.wd-heading-font{
+    font-size: 20px;
+}
+
+.wd-no-margin {
+    margin: 0px;
+}
+.wd-margin-top-bottom {
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+.wd-heading-sub {
+    margin: 2px;
+    color: rgb(76, 82, 87);
+    font-size: 13px; 
+}
+.wd-user{
+    font-weight: 500;
+    padding-right: 3px;
+}
+.wd-profile{
+    padding-top: 12px;
+    padding-left: 16px;
+    /* width: 48px; */
+    height:48px;
+    border-radius: 50%;
+}
+
+.wd-image{
+    width: 504px;
+    /* width: 100%; */
+    /* height: 100%; */
+    height: 264px;
+    /* max-height: 264px; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.wd-max-width{ max-width: 506px; }
+.wd-flex{
     display: flex;
-    justify-content: space-between;
-    width:85%
 }
 
-.ul-no-style{
-    list-style: none;
-    
+.wd-main-txt{
+    /* color: white; */
+    font-size: 15px;
+    line-height: 1.20em;
+    margin: 0px 0px 20px 0px;
+    /* font-weight:normal; */
 }
-a {
-    outline: none;
-    text-decoration: none;
+.wd-secondary-heading{
+    /* color: white; */
     font-weight: bold;
-    font-size: 1.15em;
-    color: rgb(110, 118,125);
+    margin: 0px;
+    line-height: 1.25em;
+    /* padding: 12px; */
+    font-size: 15px;
 }
-.active-link{
-    color: rgb(29,161,242);
-    border-bottom:4px solid rgb(29,161,242);
-    padding-bottom:3px;
+.wd-secondary-txt{
+    color: rgb(76, 82, 87);
+    margin: 0px;
+    line-height: 1.15em;
+    padding-top: 3px; 
+    font-size: 15px;
 }
-
-
+.wd-padding {
+    padding: 12px;
+}
+.wd-pd-left{
+    padding-left: 0px;
+}
+.wd-items-evenly{
+    list-style: none;
+    justify-content: space-evenly;
+    font-size: 12px;
+    color: rgb(76, 82, 87);
+}
