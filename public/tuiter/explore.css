@@ -1,4 +1,9 @@
-.wd-ft-secondary{
+body{
+    background-color: white;
+    color: black;
+}
+
+/* .wd-ft-secondary{
     color: rgb(110, 118,125);
     font-size:13px;
 }
@@ -139,6 +144,6 @@
     border: 1px solid rgb(47,51,54);
     border-top-width: medium; 
 }
-.wd-min-width { min-width: 1000px; }
+.wd-min-width { min-width: 1000px; } */
 
 

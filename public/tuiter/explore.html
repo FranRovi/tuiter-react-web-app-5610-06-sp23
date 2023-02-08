@@ -1,12 +1,221 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-
+        <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/b66189e80b.css" crossorigin="anonymous"> -->
+        <!-- <link rel="stylesheet" href="../../vendors/fontawesome/css/all.css"> -->
+        <link rel="stylesheet" href="../vendors/fontawesome/css/all.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="explore.css">
         <title>Explore</title>
     </head>
-    <body class="wd-min-width">
+    <body>
+        <a href="navigation.html">Back</a>
+        <hr>
+        <div class="container">
+        <!-- <div class="container-fluid"> -->
+            <div class="d-none d-xxl-block">
+                <p>XXL</p>
+                <div class="row">
+                    <div class="col-2">
+                        <ul class="list-group">
+                            <a href="" class="list-group-item"><i class="fab fa-twitter"></i></a>
+                            <a href="home.html" class="list-group-item"><i class="fa fa-home"></i> Home</a>
+                            <a href="explore.html" class="list-group-item active"><i class="fa fa-hashtag"></i> Explore</a>
+                            <a href="notifications.html" class="list-group-item"><i class="fa fa-bell"></i> Notifications</a>
+                            </i><a href="messages.html" class="list-group-item"><i class="fa fa-envelope"></i> Messages</a>
+                            <a href="bookmarks.html" class="list-group-item"><i class="fa fa-bookmark"></i> Bookmarks</a>
+                            <a href="lists.html" class="list-group-item"><i class="fa fa-list"></i> Lists</a>
+                            <a href="profile.html" class="list-group-item"><i class="fa fa-user"></i> Profile</a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-circle"></i> More</a>
+                                <!-- <span class="fa-stack">
+                                    <i class="fas fa-circle fa-stack"></i>
+                                    <i class="fab fa-ellipsis fa-stack" style="color:Tomato"></i>   
+                                </span>                                    More</a> -->
+                            <button type="button" class="btn btn-primary rounded-pill mt-2">Tweet</button>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group d-flex justify-content-around">
+                            <input type="text" placeholder="Search Tuiter" class="form form-control rounded-pill"/>
+                            <i class="fa fa-cog m-3" style="color: #0d6efd;"></i>
+                        </div>
+                        <ul class="nav nav-tabs mt-2">
+                            <li class="nav-item"><a class="nav-link active"> For You</a></li>
+                            <li class="nav-item"><a class="nav-link">Trending</a></li>
+                            <li class="nav-item"><a class="nav-link">News</a></li>
+                            <li class="nav-item"><a class="nav-link">Sports</a></li>
+                            <li class="nav-item"><a class="nav-link">Entertaiment</a></li>
+                        </ul>
+                        <img src="web_dev_spacex_starship.webp" alt="spaceX starship" width="100%">
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="d-flex">
+                                <img src="web_dev_java_logo.jpeg" alt="Java language logo" height="100px" width="100px">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0 fw-bold d-inline">Java</h5>
+                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
+                                    <p class="card-text m-0">@Java</p>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex">
+                                <img src="web_dev_relativity_logo.avif" alt="Java language logo" height="100px" width="100px">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0 fw-bold d-inline">Relativity Space</h5>
+                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
+                                    <p class="card-text m-0">@relativityspace</p>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex">
+                                <img src="web_dev_java_logo.jpeg" alt="Java language logo" height="100px" width="100px">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0 fw-bold d-inline">Virgin Galactic</h5>
+                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
+                                    <p class="card-text m-0">@virgingalactic</p>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex ">
+                                <img src="web_dev_nasa_logo.webp" alt="NASA logo" height="100px" width="100px">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0 fw-bold d-inline">NASA</h5>                          <i class="fa fa-check" style="font-size: 0.75em"></i>
+                                    <p class="card-text m-0">@NASA</p>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex">
+                                <img src="web_dev_testa_logo.webp" alt="Tesla logo" height="100px" width="100px">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0 fw-bold d-inline">Tesla</h5>
+                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
+                                    <p class="card-text m-0">@Tesla</p>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-xl-block d-xxl-none">
+                <p>XL</p>
+                <div class="row">
+                    <div class="col-2">
+                        <ul class="list-group">
+                            <a href="" class="list-group-item"><i class="fab fa-twitter"></i></a>
+                            <a href="home.html" class="list-group-item"><i class="fa fa-home"></i> Home</a>
+                            <a href="explore.html" class="list-group-item active"><i class="fa fa-hashtag"></i> Explore</a>
+                            <a href="notifications.html" class="list-group-item"><i class="fa fa-bell"></i> Notifications</a>
+                            </i><a href="messages.html" class="list-group-item"><i class="fa fa-envelope"></i> Messages</a>
+                            <a href="bookmarks.html" class="list-group-item"><i class="fa fa-bookmark"></i> Bookmarks</a>
+                            <a href="lists.html" class="list-group-item"><i class="fa fa-list"></i> Lists</a>
+                            <a href="profile.html" class="list-group-item"><i class="fa fa-user"></i> Profile</a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-circle"></i> More</a>
+                                <!-- <span class="fa-stack">
+                                    <i class="fas fa-circle fa-stack"></i>
+                                    <i class="fab fa-ellipsis fa-stack" style="color:Tomato"></i>   
+                                </span>                                    More</a> -->
+                            <button type="button" class="btn btn-primary rounded-pill mt-2">Tweet</button>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group d-flex justify-content-around">
+                            <input type="text" placeholder="Search Tuiter" class="form form-control rounded-pill"/>
+                            <i class="fa fa-cog m-3" style="color: #0d6efd;"></i>
+                        </div>
+                        <ul class="nav nav-tabs mt-2">
+                            <li class="nav-item"><a class="nav-link active"> For You</a></li>
+                            <li class="nav-item"><a class="nav-link">Trending</a></li>
+                            <li class="nav-item"><a class="nav-link">News</a></li>
+                            <li class="nav-item"><a class="nav-link">Sports</a></li>
+                            <li class="nav-item"><a class="nav-link">Entertaiment</a></li>
+                        </ul>
+                        <img src="web_dev_spacex_starship.webp" alt="spaceX starship" width="100%">
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="d-flex">
+                                <img src="web_dev_java_logo.jpeg" alt="Java language logo" height="60px" width="60px">
+                                <div class="card-body">
+                                    <h6 class="card-title m-0 fw-bold d-inline">Java</h6>
+                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
+                                    <p class="card-text m-0">@Java</p>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex">
+                                <img src="web_dev_relativity_logo.avif" alt="Relativity Space logo" height="67px" width="60px">
+                                <div class="card-body">
+                                    <h6 class="card-title m-0 fw-bold d-inline">Relativity Space</h6>
+                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
+                                    <p class="card-text m-0">@relativityspace</p>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex">
+                                <img src="web_dev_java_logo.jpeg" alt="Java language logo" height="60px" width="60px">
+                                <div class="m-1 pr-1">
+                                    <h6 class="card-title fw-bold d-inline">Virgin Galactic</h6>
+                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
+                                    <p class="card-text m-0">@virgingalactic</p>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill m-3 ms-6">Follow</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex ">
+                                <img src="web_dev_nasa_logo.webp" alt="NASA logo" height="60px" width="60px">
+                                <div class="card-body">
+                                    <h6 class="card-title m-0 fw-bold d-inline">NASA</h6>
+                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
+                                    <p class="card-text m-0">@NASA</p>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex">
+                                <img src="web_dev_testa_logo.webp" alt="Tesla logo" height="50px" width="60px"class="pt-2">
+                                <div class="card-body">
+                                    <h6 class="card-title m-0 fw-bold d-inline">Tesla</h6>
+                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
+                                    <p class="card-text m-0">@Tesla</p>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-block d-xl-none">
+                <h2>L</h2>
+            </div>
+            <div class="d-none d-md-block d-lg-none">
+                <h2>M</h2>
+            </div> 
+            <div class="d-sm-block d-md-none">
+                <h2>S</h2>
+            </div>
+        </div>
+        </div>
+    </body>
+    <!-- <body class="wd-min-width">
         <a href="navigation.html">Back</a>
         <hr>
         <div class="wd-border wd-input-field-pd wd-row">
@@ -73,5 +282,5 @@
                 <p class="ft-secondary wd-no-margin wd-line-height-primary">1,259 Tweets</p>
             </div>
         </div>
-    </body>
+    </body> -->
 </html>
