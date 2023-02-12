@@ -13,6 +13,40 @@ body{
     position: relative;
     width:100%
 }
+.wd-pos-rel-x{
+    position: relative;
+    /* width:100% */
+}
+.wd-pos-abs-btn{
+    position:absolute;
+    top:-30px;
+    left:-10px;
+}
+.wd-pos-abs-btn-1{
+    position:absolute;
+    top:-25px;
+    left:-10px;
+}
+.wd-pos-abs-btn-2{
+    position:absolute;
+    top:-20px;
+    left:-10px;
+}
+.wd-pos-abs-xl-btn{
+    position:absolute;
+    top:-30px;
+    left:-15px;
+}
+.wd-pos-abs-xl-btn-1{
+    position:absolute;
+    top:-30px;
+    left:-15px;
+}
+.wd-pos-abs-xl-btn-2{
+    position:absolute;
+    top:-30px;
+    left:-15px;
+}
 .wd-pos-rel-m{
     position: relative;
     width:85%
@@ -77,25 +111,30 @@ body{
 .wd-border-rt{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    padding-left: 5px;
-    padding-top: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 .wd-border-rb{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-.wd-bg-primary{
+.wd-bg-primary-xxl{
     background-color:rgb(245, 245, 245);
-    width:350px;
-    margin-left:15px;
-    margin-right:auto;
+    width:400px;
+    margin-left:10px;
+    padding-left:10px;
+    
+}
+.wd-bg-primary-xl{
+    background-color:rgb(245, 245, 245);
+    width:380px;
+    margin-left:10px;
+    /* margin-right:auto; */
     
 }
 .wd-bg-primary-l{
     background-color:rgb(245, 245, 245);
-    width:300px;
-    margin-left:5px;
-    
+    width:320px;
 }
 .wd-color-primary{
     color: #38abe5;
@@ -129,5 +168,8 @@ body{
     margin-top:10px;   
 }
 .wd-overlay{
-    z-index: 10;
+    z-index: 9;
+}
+.wd-no-bg{
+    background-color:none;
 }
