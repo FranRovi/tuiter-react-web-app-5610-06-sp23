@@ -1,0 +1,133 @@
+body{
+    background-color: white;
+    color: black;
+}
+.wd-font-danger{
+    color:red;
+}
+.wd-mr{
+    margin-right: 25px;
+}
+
+.wd-pos-rel{
+    position: relative;
+    width:100%
+}
+.wd-pos-rel-m{
+    position: relative;
+    width:85%
+}
+.wd-pic-title{
+    position: absolute;
+    bottom: 3px;
+    color: white;
+    padding-left: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.wd-pic-title-secondary{
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    padding-left: 15px;
+    font-size: 15px;
+}
+.wd-input-icon{
+    position: absolute;
+    bottom: 22px;
+    padding-left:15px;
+}
+
+.wd-input-icon-xl{
+    position: absolute;
+    bottom: 10px;
+    padding-left:15px;
+}
+
+.wd-input-icon-m{
+    position: absolute;
+    bottom: 10px;
+    padding-left:15px;
+}
+.wd-input-icon-s{
+    position: absolute;
+    bottom: 10px;
+    padding-left:15px;
+}
+
+.wd-text-follow{
+    font-size:14px;
+}
+.wd-text-follow-l{
+    font-size:13px;
+}
+.wd-button-color-primary{
+    background-color: #38abe5;
+    color: white;
+    border: none;
+    
+}
+.wd-main-content{
+    width:500px;
+}
+
+.wd-main-content-l{
+    width:450px;
+}
+.wd-border-rt{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.wd-border-rb{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.wd-bg-primary{
+    background-color:rgb(245, 245, 245);
+    width:350px;
+    margin-left:15px;
+    margin-right:auto;
+    
+}
+.wd-bg-primary-l{
+    background-color:rgb(245, 245, 245);
+    width:300px;
+    margin-left:5px;
+    
+}
+.wd-color-primary{
+    color: #38abe5;
+}
+.wd-input-bg{
+    background-color: rgb(245, 245, 245);
+}
+.wd-link-active{
+    border-bottom:4px solid #38abe5;
+    padding-bottom: 12px;
+}
+.wd-img-main{
+    height: 380px;
+    width: 100%;
+}
+.wd-img-main-s{
+    height: 300px;
+    width: 100%;
+}
+.wd-no-bg{
+    /* background-color:rgb(245, 245, 245); */
+    width:450px;
+    margin-left:30px;
+    margin-top:10px;
+    
+}
+.wd-no-bg-l{
+    /* background-color:rgb(245, 245, 245); */
+    width:290px;
+    margin-left:30px;
+    margin-top:10px;   
+}
+.wd-overlay{
+    z-index: 10;
+}
