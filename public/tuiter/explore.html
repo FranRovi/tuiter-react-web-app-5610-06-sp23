@@ -2,8 +2,6 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
-        <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/b66189e80b.css" crossorigin="anonymous"> -->
-        <!-- <link rel="stylesheet" href="../../vendors/fontawesome/css/all.css"> -->
         <link rel="stylesheet" href="../vendors/fontawesome/css/all.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="explore.css">
@@ -13,13 +11,12 @@
         <a href="navigation.html">Back</a>
         <hr>
         <div class="container">
-        <!-- <div class="container-fluid"> -->
             <div class="d-none d-xxl-block">
                 <p>XXL</p>
                 <div class="row">
                     <div class="col-2">
                         <ul class="list-group">
-                            <a href="" class="list-group-item"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="list-group-item"><i class="fab fa-twitter"></i></a>
                             <a href="home.html" class="list-group-item"><i class="fa fa-home"></i> Home</a>
                             <a href="explore.html" class="list-group-item active"><i class="fa fa-hashtag"></i> Explore</a>
                             <a href="notifications.html" class="list-group-item"><i class="fa fa-bell"></i> Notifications</a>
@@ -28,81 +25,148 @@
                             <a href="lists.html" class="list-group-item"><i class="fa fa-list"></i> Lists</a>
                             <a href="profile.html" class="list-group-item"><i class="fa fa-user"></i> Profile</a>
                             <a href="#" class="list-group-item">
-                                <i class="fa fa-circle"></i> More</a>
-                                <!-- <span class="fa-stack">
+                                <span class="fa-stack">
                                     <i class="fas fa-circle fa-stack"></i>
-                                    <i class="fab fa-ellipsis fa-stack" style="color:Tomato"></i>   
-                                </span>                                    More</a> -->
+                                    <i class="fas fa-ellipsis-h fa-stack" style="color:tomato"></i>
+                                </span>More</a>
                             <button type="button" class="btn btn-primary rounded-pill mt-2">Tweet</button>
                         </ul>
                     </div>
                     <div class="col-6">
                         <div class="form-group d-flex justify-content-around">
-                            <input type="text" placeholder="Search Tuiter" class="form form-control rounded-pill"/>
+                            <div class="wd-pos-rel">
+                                <i class="fas fa-search wd-input-icon"></i>
+                                <input type="text" placeholder="Search Twitter" class="form form-control rounded-pill ps-5" width="65px" height="65px" class="mt-1 ms-2"/>
+                                
+                            </div>
                             <i class="fa fa-cog m-3" style="color: #0d6efd;"></i>
                         </div>
-                        <ul class="nav nav-tabs mt-2">
+                        <ul class="nav nav-tabs mt-2 mb-1">
                             <li class="nav-item"><a class="nav-link active"> For You</a></li>
                             <li class="nav-item"><a class="nav-link">Trending</a></li>
                             <li class="nav-item"><a class="nav-link">News</a></li>
                             <li class="nav-item"><a class="nav-link">Sports</a></li>
                             <li class="nav-item"><a class="nav-link">Entertaiment</a></li>
                         </ul>
-                        <img src="web_dev_spacex_starship.webp" alt="spaceX starship" width="100%">
+                        <div class="wd-pos-rel">
+                            <img src="web_dev_spacex_starship.webp" alt="spaceX starship" width="100%">
+                            <h2 class="wd-pic-title">SpaceX's Starship</h2>
+                        </div>
+                            
+                        <div class="wd-m-main-content">
+                            <div class="row border">
+                                <div class="col-10 m-0">
+                                    <p class="text-muted m-0">Web Development</p>
+                                    <p class="m-0 fs-6"><strong>ReactJS </strong><i class="fas fa-check-circle"></i><span class="text-muted"> - 2h</span></p>
+                                    <p><strong>React.js is a component based front end library that makes it very easy to build single page applications or SPAs</strong></p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="web_dev_react_logo_black.png" alt="React Js logo in black" width="65px" height="65px" class="mt-2 ms-3">
+                                </div>
+                            </div>
+                            <div class="row border">
+                                <div class="col-10 m-0">
+                                    <p class="m-0"><strong>JavaScript </strong><i class="fas fa-check-circle"></i> <span class="text-muted fs-6"> - 2h</span></p>
+                                    <p class="m-0 fs-6"><strong>JavaScript is a programming language that can run on browsers as well as desktops</strong></p>
+                                    <p class="text-muted m-0">123K Tweets</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="web_dev_js_logo.png" alt="JavaScript logo" width="65px" height="65px" class="mt-2 ms-3 rounded-3">
+                                </div>
+                            </div>
+                            <div class="row border">
+                                <div class="col-10 m-0">
+                                    <p class="text-muted m-0">Web Development</p>
+                                    <p class="m-0 fs-6"><strong>jQuery</strong></p>
+                                    <p class="text-muted m-0">123K Tweets</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="web_dev_jquery_logo.png" alt="React Js logo in black" width="65px" height="65px" class="mt-1 ms-3">
+                                </div>
+                            </div>
+                            <div class="row border">
+                                <div class="col-10 m-0">
+                                    <p class="text-muted m-0">Web Development</p>
+                                    <p class="m-0"><strong>NodeJS </strong><i class="fas fa-check-circle"></i><span class="text-muted"> - 2h</span></p>
+                                    <p class="text-muted m-0">123K Tweets</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="web_dev_nodejs_logo.png" alt="React Js logo in black" width="65px" height="65px" class="mt-1 ms-3">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <div class="card">
-                            <div class="d-flex">
-                                <img src="web_dev_java_logo.jpeg" alt="Java language logo" height="100px" width="100px">
-                                <div class="card-body">
-                                    <h5 class="card-title m-0 fw-bold d-inline">Java</h5>
-                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
-                                    <p class="card-text m-0">@Java</p>
+                        <div>
+                            <div class="row border align-items-center">
+                                <div class="col-xxl-2 text-nowrap pt-2">
+                                    <h6><strong>Who To Follow</strong></h6>
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                                <div class="col-xxl-3">
+                                </div>
+                                <div class="col-xxl-1">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="d-flex">
-                                <img src="web_dev_relativity_logo.avif" alt="Java language logo" height="100px" width="100px">
-                                <div class="card-body">
-                                    <h5 class="card-title m-0 fw-bold d-inline">Relativity Space</h5>
-                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
-                                    <p class="card-text m-0">@relativityspace</p>
+                            <div class="row border align-items-center">
+                                <div class="col-xxl-2 bg-transparent">
+                                    <img src="web_dev_java_logo.png" alt="Java language logo" height="60px" width="55px">
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                                <div class="col-xxl-5">
+                                    <h6 class="fw-bold d-inline wd-text-follow">Java </h6>
+                                    <i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@Java</p>
+                                </div>
+                                <div class="col-xxl-1">
+                                    <a href="#" class="btn btn-primary rounded-pill ms-5 m-2 wd-mr">Follow</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="d-flex">
-                                <img src="web_dev_java_logo.jpeg" alt="Java language logo" height="100px" width="100px">
-                                <div class="card-body">
-                                    <h5 class="card-title m-0 fw-bold d-inline">Virgin Galactic</h5>
-                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
-                                    <p class="card-text m-0">@virgingalactic</p>
+                            <div class="row border align-items-center">
+                                <div class="col-xxl-2">
+                                    <img src="web_dev_relativity_logo.avif" class="rounded-circle" alt="Relativity Space logo" height="60px" width="60px">
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                                <div class="col-xxl-5">
+                                    <h6 class="fw-bold d-inline wd-text-follow">Relativity Space </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@relativityspace</p>
+                                </div>
+                                <div class="col-xxl-1">
+                                    <a href="#" class="btn btn-primary rounded-pill ms-5 m-2">Follow</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="d-flex ">
-                                <img src="web_dev_nasa_logo.webp" alt="NASA logo" height="100px" width="100px">
-                                <div class="card-body">
-                                    <h5 class="card-title m-0 fw-bold d-inline">NASA</h5>                          <i class="fa fa-check" style="font-size: 0.75em"></i>
-                                    <p class="card-text m-0">@NASA</p>
+                            <div class="row border align-items-center">
+                                <div class="col-xxl-2">
+                                    <img src="web_dev_virgin.svg" alt="Virgin Galactic logo" height="60px" width="60px">
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                                <div class="col-xxl-5">
+                                    <h6 class="fw-bold d-inline wd-text-follow">Virgin Galactic </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@virgingalactic</p>
+                                </div>
+                                <div class="col-xxl-1">
+                                    <a href="#" class="btn btn-primary rounded-pill ms-5 m-2">Follow</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="d-flex">
-                                <img src="web_dev_testa_logo.webp" alt="Tesla logo" height="100px" width="100px">
-                                <div class="card-body">
-                                    <h5 class="card-title m-0 fw-bold d-inline">Tesla</h5>
-                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
-                                    <p class="card-text m-0">@Tesla</p>
+                            <div class="row border align-items-center">
+                                <div class="col-xxl-2">
+                                    <img src="web_dev_nasa_logo.webp" alt="National Administration space administration logo" height="60px" width="60px">
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                                <div class="col-xxl-5">
+                                    <h6 class="fw-bold d-inline wd-text-follow">NASA </h6><i class="fas fa-check-circle"></i></i>
+                                    <p class="wd-text-follow">@NASA</p>
+                                </div>
+                                <div class="col-xxl-1">
+                                    <a href="#" class="btn btn-primary rounded-pill ms-5 m-2">Follow</a>
+                                </div>
+                            </div>
+                            <div class="row border align-items-center">
+                                <div class="col-xxl-2">
+                                    <img src="web_dev_testa_logo.webp" alt="Testla logo" height="55px" width="60px p-0">
+                                </div>
+                                <div class="col-xxl-5">
+                                    <h6 class="fw-bold d-inline wd-text-follow">Tesla </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@Tesla</p>
+                                </div>
+                                <div class="col-xxl-1">
+                                    <a href="#" class="btn btn-primary rounded-pill ms-5 m-2">Follow</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -123,6 +187,318 @@
                             <a href="profile.html" class="list-group-item"><i class="fa fa-user"></i> Profile</a>
                             <a href="#" class="list-group-item">
                                 <i class="fa fa-circle"></i> More</a>
+                            <button type="button" class="btn btn-primary rounded-pill mt-2">Tweet</button>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group d-flex justify-content-around">
+                            <div class="wd-pos-rel">
+                                <i class="fas fa-search wd-input-icon"></i>
+                                <input type="text" placeholder="Search Twitter" class="form form-control rounded-pill ps-5" width="65px" height="65px"/>
+                            </div>
+                            <i class="fa fa-cog m-3" style="color: #0d6efd;"></i>
+                        </div>
+                        <ul class="nav nav-tabs mt-2 mb-1">
+                            <li class="nav-item"><a class="nav-link active"> For You</a></li>
+                            <li class="nav-item"><a class="nav-link">Trending</a></li>
+                            <li class="nav-item"><a class="nav-link">News</a></li>
+                            <li class="nav-item"><a class="nav-link">Sports</a></li>
+                            <li class="nav-item"><a class="nav-link">Entertaiment</a></li>
+                        </ul>
+                        <div class="wd-pos-rel">
+                            <img src="web_dev_spacex_starship.webp" alt="spaceX starship" width="100%">
+                            <h2 class="wd-pic-title">SpaceX's Starship</h2>
+                        </div>
+                            
+                        <div class="wd-m-main-content">
+                            <div class="row border">
+                                <div class="col-10 m-0">
+                                    <p class="text-muted m-0">Web Development</p>
+                                    <p class="m-0 fs-6"><strong>ReactJS </strong><i class="fas fa-check-circle"></i><span class="text-muted"> - 2h</span></p>
+                                    <p><strong>React.js is a component based front end library that makes it very easy to build single page applications or SPAs</strong></p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="web_dev_react_logo_black.png" alt="React Js logo in black" width="65px" height="65px" class="mt-2 ms-3">
+                                </div>
+                            </div>
+                            <div class="row border">
+                                <div class="col-10 m-0">
+                                    <p class="m-0"><strong>JavaScript </strong><i class="fas fa-check-circle"></i> <span class="text-muted fs-6"> - 2h</span></p>
+                                    <p class="m-0 fs-6"><strong>JavaScript is a programming language that can run on browsers as well as desktops</strong></p>
+                                    <p class="text-muted m-0">123K Tweets</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="web_dev_js_logo.png" alt="JavaScript logo" width="65px" height="65px" class="mt-2 ms-3 rounded-3">
+                                </div>
+                            </div>
+                            <div class="row border">
+                                <div class="col-10 m-0">
+                                    <p class="text-muted m-0">Web Development</p>
+                                    <p class="m-0 fs-6"><strong>jQuery</strong></p>
+                                    <p class="text-muted m-0">123K Tweets</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="web_dev_jquery_logo.png" alt="React Js logo in black" width="65px" height="65px" class="mt-1 ms-3">
+                                </div>
+                            </div>
+                            <div class="row border">
+                                <div class="col-10 m-0">
+                                    <p class="text-muted m-0">Web Development</p>
+                                    <p class="m-0"><strong>NodeJS </strong><i class="fas fa-check-circle"></i><span class="text-muted"> - 2h</span></p>
+                                    <p class="text-muted m-0">123K Tweets</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="web_dev_nodejs_logo.png" alt="React Js logo in black" width="65px" height="65px" class="mt-1 ms-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div>
+                            <div class="row border align-items-center">
+                                <div class="col-xl-2 text-nowrap pt-2">
+                                    <h6><strong>Who To Follow</strong></h6>
+                                </div>
+                                <div class="col-xl-3">
+                                </div>
+                                <div class="col-xl-1">
+                                </div>
+                            </div>
+                            <div class="row border align-items-center">
+                                <div class="col-xl-2">
+                                    <img src="web_dev_java_logo.png" alt="Java language logo" height="55px" width="50px">
+                                </div>
+                                <div class="col-xl-5">
+                                    <h6 class="fw-bold d-inline wd-text-follow">Java </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@Java</p>
+                                </div>
+                                <div class="col-xl-1">
+                                    <a href="#" class="btn btn-primary rounded-pill ms-5 m-2">Follow</a>
+                                </div>
+                            </div>
+                            <div class="row border align-items-center">
+                                <div class="col-xl-2">
+                                    <img src="web_dev_relativity_logo.avif" class="rounded-circle" alt="Relativity Space logo" height="55px" width="55px">
+                                </div>
+                                <div class="col-xl-5">
+                                    <h6 class="fw-bold d-inline wd-text-follow">Relativity Space </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@relativityspace</p>
+                                </div>
+                                <div class="col-xl-1">
+                                    <a href="#" class="btn btn-primary rounded-pill ms-5 m-2">Follow</a>
+                                </div>
+                            </div>
+                            <div class="row border align-items-center">
+                                <div class="col-xl-2">
+                                    <img src="web_dev_virgin.svg" alt="Virgin Galactic logo" height="55px" width="55px p-0">
+                                </div>
+                                <div class="col-xl-5">
+                                    <h6 class="fw-bold d-inline wd-text-follow">Virgin Galactic </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@virgingalactic</p>
+                                </div>
+                                <div class="col-xl-1">
+                                    <a href="#" class="btn btn-primary rounded-pill ms-5 m-2">Follow</a>
+                                </div>
+                            </div>
+                            <div class="row border align-items-center">
+                                <div class="col-xl-2">
+                                    <img src="web_dev_nasa_logo.webp" alt="National Administration space administration logo" height="60px" width="60px p-0">
+                                </div>
+                                <div class="col-xl-5">
+                                    <h6 class="fw-bold d-inline wd-text-follow">NASA </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@NASA</p>
+                                </div>
+                                <div class="col-xl-1">
+                                    <a href="#" class="btn btn-primary rounded-pill ms-5 m-2">Follow</a>
+                                </div>
+                            </div>
+                            <div class="row border align-items-center">
+                                <div class="col-xl-2">
+                                    <img src="web_dev_testa_logo.webp" alt="Testla logo" height="50px" width="55px">
+                                </div>
+                                <div class="col-xl-5">
+                                    <h6 class="fw-bold d-inline wd-text-follow">Tesla </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@tesla</p>
+                                </div>
+                                <div class="col-xl-1">
+                                    <a href="#" class="btn btn-primary rounded-pill ms-5 m-2">Follow</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-block d-xl-none">
+                <p>L</p>
+                <div class="row">
+                    <div class="col-1">
+                        <ul class="list-group">
+                            <a href="" class="list-group-item"><i class="fab fa-twitter"></i></a>
+                            <a href="home.html" class="list-group-item"><i class="fa fa-home"></i></a>
+                            <a href="explore.html" class="list-group-item active"><i class="fa fa-hashtag"></i></a>
+                            <a href="notifications.html" class="list-group-item"><i class="fa fa-bell"></i></a>
+                            </i><a href="messages.html" class="list-group-item"><i class="fa fa-envelope"></i></a>
+                            <a href="bookmarks.html" class="list-group-item"><i class="fa fa-bookmark"></i></a>
+                            <a href="lists.html" class="list-group-item"><i class="fa fa-list"></i></a>
+                            <a href="profile.html" class="list-group-item"><i class="fa fa-user"></i></a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-circle"></i></a>
+                            <button type="button" class="btn btn-primary rounded-pill mt-2 pt-1 pb-1 ps-2 pe-2">Tweet</button>
+                        </ul>
+                    </div>
+                    <div class="col-7">
+                        <div class="form-group d-flex justify-content-around">
+                            <div class="wd-pos-rel">
+                                <i class="fas fa-search wd-input-icon"></i>
+                                <input type="text" placeholder="Search Twitter" class="form form-control rounded-pill ps-5" width="65px" height="65px"/>
+                            </div>
+                            <i class="fa fa-cog m-3" style="color: #0d6efd;"></i>
+                        </div>
+                        <ul class="nav nav-tabs mt-2 mb-1">
+                            <li class="nav-item"><a class="nav-link active"> For You</a></li>
+                            <li class="nav-item"><a class="nav-link">Trending</a></li>
+                            <li class="nav-item"><a class="nav-link">News</a></li>
+                            <li class="nav-item"><a class="nav-link">Sports</a></li>
+                            <li class="nav-item"><a class="nav-link">Entertaiment</a></li>
+                        </ul>
+                        <div class="wd-pos-rel">
+                            <img src="web_dev_spacex_starship.webp" alt="spaceX starship" width="100%">
+                            <h2 class="wd-pic-title">SpaceX's Starship</h2>
+                        </div>
+                            
+                        <div class="wd-m-main-content">
+                            <div class="row border">
+                                <div class="col-10 m-0">
+                                    <p class="text-muted m-0">Web Development</p>
+                                    <p class="m-0 fs-6"><strong>ReactJS </strong><i class="fas fa-check-circle"></i><span class="text-muted"> - 2h</span></p>
+                                    <p><strong>React.js is a component based front end library that makes it very easy to build single page applications or SPAs</strong></p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="web_dev_react_logo_black.png" alt="React Js logo in black" width="65px" height="65px" class="mt-2 ms-3">
+                                </div>
+                            </div>
+                            <div class="row border">
+                                <div class="col-10 m-0">
+                                    <p class="m-0"><strong>JavaScript </strong><i class="fas fa-check-circle"></i> <span class="text-muted fs-6"> - 2h</span></p>
+                                    <p class="m-0 fs-6"><strong>JavaScript is a programming language that can run on browsers as well as desktops</strong></p>
+                                    <p class="text-muted m-0">123K Tweets</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="web_dev_js_logo.png" alt="JavaScript logo" width="65px" height="65px" class="mt-2 ms-3 rounded-3">
+                                </div>
+                            </div>
+                            <div class="row border">
+                                <div class="col-10 m-0">
+                                    <p class="text-muted m-0">Web Development</p>
+                                    <p class="m-0 fs-6"><strong>jQuery</strong></p>
+                                    <p class="text-muted m-0">123K Tweets</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="web_dev_jquery_logo.png" alt="React Js logo in black" width="65px" height="65px" class="mt-1 ms-3">
+                                </div>
+                            </div>
+                            <div class="row border">
+                                <div class="col-10 m-0">
+                                    <p class="text-muted m-0">Web Development</p>
+                                    <p class="m-0"><strong>NodeJS </strong><i class="fas fa-check-circle"></i><span class="text-muted"> - 2h</span></p>
+                                    <p class="text-muted m-0">123K Tweets</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="web_dev_nodejs_logo.png" alt="React Js logo in black" width="65px" height="65px" class="mt-1 ms-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <div class="row border align-items-center">
+                                <div class="col-lg-2 text-nowrap pt-2">
+                                    <h6><strong>Who To Follow</strong></h6>
+                                </div>
+                                <div class="col-lg-3">
+                                </div>
+                                <div class="col-lg-1">
+                                </div>
+                            </div>
+                            <div class="row border align-items-center">
+                                <div class="col-lg-2">
+                                    <img src="web_dev_java_logo.png" alt="Java language logo" height="45px" width="40px">
+                                </div>
+                                <div class="col-lg-5 ms-1">
+                                    <h6 class="fw-bold d-inline wd-text-follow">Java </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@Java</p>
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="#" class="btn btn-primary rounded-pill">Follow</a>
+                                </div>
+                            </div>
+                            <div class="row border align-items-center">
+                                <div class="col-lg-2">
+                                    <img src="web_dev_relativity_logo.avif" class="rounded-circle" alt="Relativity Space logo" height="45px" width="45px">
+                                </div>
+                                <div class="col-lg-5 ms-1 wd-pos-rel-x">
+                                    <h6 class="fw-bold d-inline wd-text-follow text-nowrap wd-overlay">Relativity Space </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@relativityspace</p>
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="#" class="btn btn-primary rounded-pill">Follow</a>
+                                </div>
+                            </div>
+                            <div class="row border align-items-center">
+                                <div class="col-lg-2">
+                                    <img src="web_dev_virgin.svg" alt="Virgin Galactic logo" height="45px" width="45px p-0">
+                                </div>
+                                <div class="col-lg-5 ms-1 wd-pos-rel-x">
+                                    <h6 class="fw-bold d-inline wd-text-follow text-nowrap wd-overlay">Virgin Galactic </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@virgingalactic</p>
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="#" class="btn btn-primary rounded-pill">Follow</a>
+                                </div>
+                            </div>
+                            <div class="row border align-items-center">
+                                <div class="col-lg-2">
+                                    <img src="web_dev_nasa_logo.webp" alt="National Administration space administration logo" height="50px" width="50px">
+                                </div>
+                                <div class="col-lg-5 ms-1">
+                                    <h6 class="fw-bold d-inline wd-text-follow">NASA </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@NASA</p>
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="#" class="btn btn-primary rounded-pill">Follow</a>
+                                </div>
+                            </div>
+                            <div class="row border align-items-center">
+                                <div class="col-lg-2">
+                                    <img src="web_dev_testa_logo.webp" alt="Testla logo" height="40px" width="45px">
+                                </div>
+                                <div class="col-lg-5 ms-1">
+                                    <h6 class="fw-bold d-inline wd-text-follow">Tesla </h6><i class="fas fa-check-circle"></i>
+                                    <p class="wd-text-follow">@tesla</p>
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="#" class="btn btn-primary rounded-pill">Follow</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block d-lg-none">
+                <p>M</p>
+                <div class="row">
+                    <div class="col-2">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item"><i class="fab fa-twitter"></i></a>
+                            <a href="home.html" class="list-group-item"><i class="fa fa-home"></i></a>
+                            <a href="explore.html" class="list-group-item active"><i class="fa fa-hashtag"></i></a>
+                            <a href="notifications.html" class="list-group-item"><i class="fa fa-bell"></i> </a>
+                            </i><a href="messages.html" class="list-group-item"><i class="fa fa-envelope"></i></a>
+                            <a href="bookmarks.html" class="list-group-item"><i class="fa fa-bookmark"></i></a>
+                            <a href="lists.html" class="list-group-item"><i class="fa fa-list"></i></a>
+                            <a href="profile.html" class="list-group-item"><i class="fa fa-user"></i></a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-circle"></i></a>
                                 <!-- <span class="fa-stack">
                                     <i class="fas fa-circle fa-stack"></i>
                                     <i class="fab fa-ellipsis fa-stack" style="color:Tomato"></i>   
@@ -130,89 +506,157 @@
                             <button type="button" class="btn btn-primary rounded-pill mt-2">Tweet</button>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="col-9">
                         <div class="form-group d-flex justify-content-around">
-                            <input type="text" placeholder="Search Tuiter" class="form form-control rounded-pill"/>
+                            <div class="wd-pos-rel">
+                                <i class="fas fa-search wd-input-icon"></i>
+                                <input type="text" placeholder="Search Twitter" class="form form-control rounded-pill ps-5"/>
+                            </div>
                             <i class="fa fa-cog m-3" style="color: #0d6efd;"></i>
                         </div>
-                        <ul class="nav nav-tabs mt-2">
-                            <li class="nav-item"><a class="nav-link active"> For You</a></li>
-                            <li class="nav-item"><a class="nav-link">Trending</a></li>
-                            <li class="nav-item"><a class="nav-link">News</a></li>
-                            <li class="nav-item"><a class="nav-link">Sports</a></li>
-                            <li class="nav-item"><a class="nav-link">Entertaiment</a></li>
-                        </ul>
-                        <img src="web_dev_spacex_starship.webp" alt="spaceX starship" width="100%">
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="d-flex">
-                                <img src="web_dev_java_logo.jpeg" alt="Java language logo" height="60px" width="60px">
-                                <div class="card-body">
-                                    <h6 class="card-title m-0 fw-bold d-inline">Java</h6>
-                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
-                                    <p class="card-text m-0">@Java</p>
-                                </div>
-                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
+                            <ul class="nav nav-tabs mt-2 mb-1">
+                                <li class="nav-item"><a class="nav-link active"> For You</a></li>
+                                <li class="nav-item"><a class="nav-link">Trending</a></li>
+                                <li class="nav-item"><a class="nav-link">News</a></li>
+                                <li class="nav-item"><a class="nav-link">Sports</a></li>
+                                <li class="nav-item"><a class="nav-link">Entertaiment</a></li>
+                            </ul>
+                            <div class="wd-pos-rel">
+                                <img src="web_dev_spacex_starship.webp" alt="spaceX starship" width="100%">
+                                <h2 class="wd-pic-title">SpaceX's Starship</h2>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="d-flex">
-                                <img src="web_dev_relativity_logo.avif" alt="Relativity Space logo" height="67px" width="60px">
-                                <div class="card-body">
-                                    <h6 class="card-title m-0 fw-bold d-inline">Relativity Space</h6>
-                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
-                                    <p class="card-text m-0">@relativityspace</p>
+                                
+                            <div class="wd-m-main-content">
+                                <div class="row border">
+                                    <div class="col-9 m-0">
+                                        <p class="text-muted m-0">Web Development</p>
+                                        <p class="m-0 fs-6"><strong>ReactJS </strong><i class="fas fa-check-circle"></i><span class="text-muted"> - 2h</span></p>
+                                        <p><strong>React.js is a component based front end library that makes it very easy to build single page applications or SPAs</strong></p>
+                                    </div>
+                                    <div class="col-2">
+                                        <img src="web_dev_react_logo_black.png" alt="React Js logo in black" width="65px" height="65px" class="mt-2 ms-3">
+                                    </div>
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="d-flex">
-                                <img src="web_dev_java_logo.jpeg" alt="Java language logo" height="60px" width="60px">
-                                <div class="m-1 pr-1">
-                                    <h6 class="card-title fw-bold d-inline">Virgin Galactic</h6>
-                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
-                                    <p class="card-text m-0">@virgingalactic</p>
+                                <div class="row border">
+                                    <div class="col-9 m-0">
+                                        <p class="m-0"><strong>JavaScript </strong><i class="fas fa-check-circle"></i> <span class="text-muted fs-6"> - 2h</span></p>
+                                        <p class="m-0 fs-6"><strong>JavaScript is a programming language that can run on browsers as well as desktops</strong></p>
+                                        <p class="text-muted m-0">123K Tweets</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <img src="web_dev_js_logo.png" alt="JavaScript logo" width="65px" height="65px" class="mt-2 ms-3 rounded-3">
+                                    </div>
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill m-3 ms-6">Follow</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="d-flex ">
-                                <img src="web_dev_nasa_logo.webp" alt="NASA logo" height="60px" width="60px">
-                                <div class="card-body">
-                                    <h6 class="card-title m-0 fw-bold d-inline">NASA</h6>
-                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
-                                    <p class="card-text m-0">@NASA</p>
+                                <div class="row border">
+                                    <div class="col-9 m-0">
+                                        <p class="text-muted m-0">Web Development</p>
+                                        <p class="m-0 fs-6"><strong>jQuery</strong></p>
+                                        <p class="text-muted m-0">123K Tweets</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <img src="web_dev_jquery_logo.png" alt="React Js logo in black" width="65px" height="65px" class="mt-1 ms-3">
+                                    </div>
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="d-flex">
-                                <img src="web_dev_testa_logo.webp" alt="Tesla logo" height="50px" width="60px"class="pt-2">
-                                <div class="card-body">
-                                    <h6 class="card-title m-0 fw-bold d-inline">Tesla</h6>
-                                    <i class="fa fa-check" style="font-size: 0.75em"></i>
-                                    <p class="card-text m-0">@Tesla</p>
+                                <div class="row border">
+                                    <div class="col-9 m-0">
+                                        <p class="text-muted m-0">Web Development</p>
+                                        <p class="m-0"><strong>NodeJS </strong><i class="fas fa-check-circle"></i><span class="text-muted"> - 2h</span></p>
+                                        <p class="text-muted m-0">123K Tweets</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <img src="web_dev_nodejs_logo.png" alt="React Js logo in black" width="65px" height="65px" class="mt-1 ms-3">
+                                    </div>
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill mt-4 mb-4 m-2">Follow</a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="d-none d-lg-block d-xl-none">
-                <h2>L</h2>
-            </div>
-            <div class="d-none d-md-block d-lg-none">
-                <h2>M</h2>
-            </div> 
+                </div> 
             <div class="d-sm-block d-md-none">
-                <h2>S</h2>
-            </div>
-        </div>
+                <p>S</p>
+                <div class="row">
+                    <div class="col-2">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item"><i class="fab fa-twitter"></i></a>
+                            <a href="home.html" class="list-group-item"><i class="fa fa-home"></i></a>
+                            <a href="explore.html" class="list-group-item active"><i class="fa fa-hashtag"></i></a>
+                            <a href="notifications.html" class="list-group-item"><i class="fa fa-bell"></i> </a>
+                            </i><a href="messages.html" class="list-group-item"><i class="fa fa-envelope"></i></a>
+                            <a href="bookmarks.html" class="list-group-item"><i class="fa fa-bookmark"></i></a>
+                            <a href="lists.html" class="list-group-item"><i class="fa fa-list"></i></a>
+                            <a href="profile.html" class="list-group-item"><i class="fa fa-user"></i></a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-circle"></i></a>
+                                <!-- <span class="fa-stack">
+                                    <i class="fas fa-circle fa-stack"></i>
+                                    <i class="fab fa-ellipsis fa-stack" style="color:Tomato"></i>   
+                                </span>                                    More</a> -->
+                            <button type="button" class="btn btn-primary rounded-pill mt-2">Tweet</button>
+                        </ul>
+                    </div>
+                    <div class="col-9">
+                        <div class="form-group d-flex justify-content-around">
+                            <div class="wd-pos-rel">
+                                <i class="fas fa-search wd-input-icon"></i>
+                                <input type="text" placeholder="Search Twitter" class="form form-control rounded-pill ps-5"/>
+                            </div>
+                            <i class="fa fa-cog m-3" style="color: #0d6efd;"></i>
+                        </div>
+                            <ul class="nav nav-tabs mt-2 mb-1">
+                                <li class="nav-item"><a class="nav-link active"> For You</a></li>
+                                <li class="nav-item"><a class="nav-link">Trending</a></li>
+                                <li class="nav-item"><a class="nav-link">News</a></li>
+                                <li class="nav-item"><a class="nav-link">Sports</a></li>
+                                <!-- <li class="nav-item"><a class="nav-link">Entertaiment</a></li> -->
+                            </ul>
+                            <div class="wd-pos-rel">
+                                <img src="web_dev_spacex_starship.webp" alt="spaceX starship" width="100%">
+                                <h2 class="wd-pic-title">SpaceX's Starship</h2>
+                            </div>
+                                
+                            <div class="wd-m-main-content">
+                                <div class="row border">
+                                    <div class="col-9 m-0">
+                                        <p class="text-muted m-0">Web Development</p>
+                                        <p class="m-0 fs-6"><strong>ReactJS </strong><i class="fas fa-check-circle"></i><span class="text-muted"> - 2h</span></p>
+                                        <p><strong>React.js is a component based front end library that makes it very easy to build single page applications or SPAs</strong></p>
+                                    </div>
+                                    <div class="col-2">
+                                        <img src="web_dev_react_logo_black.png" alt="React Js logo in black" width="65px" height="65px" class="mt-2 ms-3">
+                                    </div>
+                                </div>
+                                <div class="row border">
+                                    <div class="col-9 m-0">
+                                        <p class="m-0"><strong>JavaScript </strong><i class="fas fa-check-circle"></i> <span class="text-muted fs-6"> - 2h</span></p>
+                                        <p class="m-0 fs-6"><strong>JavaScript is a programming language that can run on browsers as well as desktops</strong></p>
+                                        <p class="text-muted m-0">123K Tweets</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <img src="web_dev_js_logo.png" alt="JavaScript logo" width="65px" height="65px" class="mt-2 ms-3 rounded-3">
+                                    </div>
+                                </div>
+                                <div class="row border">
+                                    <div class="col-9 m-0">
+                                        <p class="text-muted m-0">Web Development</p>
+                                        <p class="m-0 fs-6"><strong>jQuery</strong></p>
+                                        <p class="text-muted m-0">123K Tweets</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <img src="web_dev_jquery_logo.png" alt="React Js logo in black" width="65px" height="65px" class="mt-1 ms-3">
+                                    </div>
+                                </div>
+                                <div class="row border">
+                                    <div class="col-9 m-0">
+                                        <p class="text-muted m-0">Web Development</p>
+                                        <p class="m-0"><strong>NodeJS </strong><i class="fas fa-check-circle"></i><span class="text-muted"> - 2h</span></p>
+                                        <p class="text-muted m-0">123K Tweets</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <img src="web_dev_nodejs_logo.png" alt="React Js logo in black" width="65px" height="65px" class="mt-1 ms-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         </div>
     </body>
     <!-- <body class="wd-min-width">

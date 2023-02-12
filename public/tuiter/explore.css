@@ -2,6 +2,64 @@ body{
     background-color: white;
     color: black;
 }
+.wd-font-danger{
+    color:red;
+}
+.wd-mr{
+    margin-right: 25px;
+}
+
+.wd-pos-rel{
+    position: relative;
+    width:100%
+}
+.wd-pos-rel-x{
+    position: relative;
+    /* width:100% */
+}
+.wd-pos-rel-m{
+    position: relative;
+    width:85%
+}
+.wd-pic-title{
+    position: absolute;
+    bottom: 3px;
+    color: white;
+    padding-left: 5px;
+    font-size: 40px;
+}
+.wd-input-icon{
+    position: absolute;
+    bottom: 22px;
+    padding-left:15px;
+}
+
+.wd-input-icon-xl{
+    position: absolute;
+    bottom: 10px;
+    padding-left:15px;
+}
+
+.wd-input-icon-m{
+    position: absolute;
+    bottom: 10px;
+    padding-left:15px;
+}
+.wd-input-icon-s{
+    position: absolute;
+    bottom: 10px;
+    padding-left:15px;
+}
+.wd-m-main-content{
+    margin-right:11px;
+    margin-left:11px;
+}
+.wd-text-follow{
+    font-size:14px;
+}
+.wd-overlay{
+    z-index: 9;
+}
 
 /* .wd-ft-secondary{
     color: rgb(110, 118,125);
