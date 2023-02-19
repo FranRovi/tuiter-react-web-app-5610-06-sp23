@@ -1,0 +1,118 @@
+.wd-fs-rb {
+    font-size:15px;
+}
+
+.wd-fs-rb-secondary {
+    font-size:13px;
+    color:white;
+}
+
+.wd-image-rb {
+    height: 50px;
+    width: 20%;
+}
+
+.wd-pos-rel{
+    position: relative;
+    width:100%
+}
+.wd-pos-rel-x{
+    position: relative;
+    /* width:100% */
+}
+.wd-pos-rel-m{
+    position: relative;
+    width:85%
+}
+.wd-pic-title{
+    position: absolute;
+    bottom: 3px;
+    color: white;
+    padding-left: 5px;
+    font-size: 40px;
+}
+
+.wd-input-icon{
+    position: absolute;
+    bottom: 18px;
+    left:20px;
+}
+
+.wd-input-icon-xl{
+    position: absolute;
+    bottom: 10px;
+    padding-left:15px;
+}
+
+.wd-input-icon-m{
+    position: absolute;
+    bottom: 10px;
+    padding-left:15px;
+}
+.wd-input-icon-s{
+    position: absolute;
+    bottom: 10px;
+    padding-left:15px;
+}
+
+.wd-post-image{
+    width:auto;
+    height:55px;
+    margin-top:5px;
+}
+
+a:hover { color: white}
+a:link { color: white}
+
+.wd-posts{
+    margin-right:-10px;
+    margin-left:-10px;
+}
+
+.wd-icon {
+    width:30px;
+    height:30px;
+}
+
+.wd-image-home{
+    width: 100%;
+    height: auto;
+}
+
+.wd-span-blue{
+    color:  #2a9fd6;
+}
+
+.image-heading {
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left:5px;
+    margin-bottom:0px;
+}
+.wd-ellipsis-end{
+    padding-left: 205px;
+}
+
+.wd-home-description {
+    font-size:13px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-bottom: 0px;
+}
+
+.wd-home-border-top-rounded {
+    border: solid 1px #5b5b5b;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+
+.wd-home-border-bottom-rounded {
+    border: solid 1px #5b5b5b;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+
+.wd-icons-main-txt {
+    font-size:12px;
+}
