@@ -2,6 +2,10 @@
     font-size:15px;
 }
 
+.wd-fs-rb-small {
+    font-size:12px;
+}
+
 .wd-fs-rb-secondary {
     font-size:13px;
     color:white;
@@ -73,6 +77,10 @@ a:link { color: white}
     font-weight: bolder;
 }
 
-.width-all-line{
+.wd-width-all-line{
     width: 100%;
+}
+
+.wd-hide{
+    display: none;
 }

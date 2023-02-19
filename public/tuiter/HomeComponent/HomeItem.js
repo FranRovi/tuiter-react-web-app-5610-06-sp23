@@ -6,7 +6,7 @@ const HomeItem = (home) => {
                     <img src="${home.avatarIcon}" class="rounded-circle wd-icon">
                 </div>
                 <div class="col-10">
-                    <span>${home.userName} </span><i class="fas fa-circle" style='color:white'></i><span class='text-muted'> ${home.handle} &#x2022</span> <span class='text-muted'>${home.time}</span><span class="text-muted wd-ellipsis-end">...</span>
+                    <span>${home.userName} </span><i class="fas fa-check-circle" style='color:white'></i><span class='text-muted'> ${home.handle} &#x2022</span> <span class='text-muted'>${home.time}</span><span class="text-muted wd-ellipsis-end">...</span>
                     <p>${home.heading}</p>
                     <div>
                         <div>
@@ -31,7 +31,7 @@ const HomeItem = (home) => {
                 <ul>
                 </div> 
             </div>
-            <hr class="width-all-line mt-0" />      
+            <hr class="wd-width-all-line mt-0" />      
         </li>      
     `);
 }

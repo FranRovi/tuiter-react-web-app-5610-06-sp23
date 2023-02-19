@@ -1,4 +1,4 @@
-const NavigationSidebar = (highlight = "Explore") => {
+const NaviSBSmall = (highlight = "Explore") => {
     const sections = [
       {
         label: '', href: '/', icon: 'fab fa-twitter style="color:white"', 
@@ -33,7 +33,7 @@ const NavigationSidebar = (highlight = "Explore") => {
         ${
           sections.map(section => `
           <a class="list-group-item ${section.label === highlight ? "active" : ""}" href="${section.href}">
-            <i class="${section.icon}"></i> ${section.label}</a>
+            <i class="${section.icon}"></i></a>
           `).join("")
         }
       </div>
@@ -44,4 +44,4 @@ const NavigationSidebar = (highlight = "Explore") => {
       </div>
     `);
    }
-   export default NavigationSidebar;
+   export default NaviSBSmall;
