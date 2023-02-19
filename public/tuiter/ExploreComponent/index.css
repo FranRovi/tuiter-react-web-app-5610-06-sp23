@@ -1,0 +1,78 @@
+.wd-fs-rb {
+    font-size:15px;
+}
+
+.wd-fs-rb-secondary {
+    font-size:13px;
+    color:white;
+}
+
+.wd-image-rb {
+    height: 50px;
+    width: 20%;
+}
+
+.wd-pos-rel{
+    position: relative;
+    width:100%
+}
+.wd-pos-rel-x{
+    position: relative;
+    /* width:100% */
+}
+.wd-pos-rel-m{
+    position: relative;
+    width:85%
+}
+.wd-pic-title{
+    position: absolute;
+    bottom: 3px;
+    color:#212529;
+    padding-left: 5px;
+    font-size: 40px;
+}
+
+.wd-input-icon{
+    position: absolute;
+    bottom: 18px;
+    left:20px;
+}
+
+.wd-input-icon-xl{
+    position: absolute;
+    bottom: 10px;
+    padding-left:15px;
+}
+
+.wd-input-icon-m{
+    position: absolute;
+    bottom: 10px;
+    padding-left:15px;
+}
+.wd-input-icon-s{
+    position: absolute;
+    bottom: 10px;
+    padding-left:15px;
+}
+
+.wd-post-image{
+    width:auto;
+    height:55px;
+    margin-top:5px;
+}
+
+a:hover { color: white}
+a:link { color: white}
+
+.wd-posts{
+    margin-right:-10px;
+    margin-left:-10px;
+}
+
+.wd-title-bold{
+    font-weight: bolder;
+}
+
+.width-all-line{
+    width: 100%;
+}
