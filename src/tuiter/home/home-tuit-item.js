@@ -8,7 +8,6 @@ const HomeTuitItem = (tuit) => {
         _id: 3,
         userName: "Elon Musk",
         userIcon: "../../images/web_dev_spaceX_logo.jpeg",
-        userName: "SpaceX",
         handle: "@SpaceX",
         time: "16h",
         description: "Starlink for Rv's now has over 100,000 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage -> starlink.com/rv",
@@ -22,21 +21,21 @@ const HomeTuitItem = (tuit) => {
         <li className="list-group-item" key={tuit._id}>
             <div className="row">
                 <div className="col-2">
-                    <img className="rounded-circle ms-2 wd-img-avatar" src={tuit.userIcon} />
+                    <img className="rounded-circle ms-2 wd-img-avatar" src={tuit.userIcon} alt=""/>
                 </div>
             
                 <div className="col-10 pos-relative">
                     <p className="m-0"><span className="wd-ft-bold">{tuit.userName}</span> <AiFillCheckCircle className="wd-icon-primary"/> <span className="text-muted">{tuit.handle} &#183; {tuit.time}</span> <span className="wd-ellipsis">...</span></p>
                     <p className="wd-lh wd-fs">{tuit.description}{tuit.color === "" ? "" : <span className='text-primary'>{tuit.color}</span>}</p>
                     {
-                        tuit.image === "" ? <></> : <img className="rounded-4" src={tuit.image} width="100%"/>
+                        tuit.image === "" ? <></> : <img className="rounded-4" src={tuit.image} width="100%" alt="" />
                     }
 
                     {
                         tuit.userName === "Elon Musk" ? <>
                             <div className="row border rounded-4 me-2">
                                 <div>
-                                    <img className="col-1 rounded-circle m-1" height={commentTweet.height} width={commentTweet.width} src={commentTweet.userIcon} /> <span className="m-0"><span className="wd-ft-bold ps-1">{commentTweet.userName} <AiFillCheckCircle className="wd-icon-primary"/></span> <span className="text-muted">{commentTweet.handle} &#183; {commentTweet.time}</span><span className="text-muted wd-pd-st"></span></span>
+                                    <img className="col-1 rounded-circle m-1" height={commentTweet.height} width={commentTweet.width} src={commentTweet.userIcon} alt="" /> <span className="m-0"><span className="wd-ft-bold ps-1">{commentTweet.userName} <AiFillCheckCircle className="wd-icon-primary"/></span> <span className="text-muted">{commentTweet.handle} &#183; {commentTweet.time}</span><span className="text-muted wd-pd-st"></span></span>
                                 </div>
                                 <div>
                                     <p className="wd-lh ps-3 wd-fs-s">{commentTweet.description}</p>
