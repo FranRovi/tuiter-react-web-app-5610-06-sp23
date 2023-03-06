@@ -18,17 +18,17 @@ const ExploreComponent = () => {
      </div>
      <ul className="nav nav-pills mb-2">
        <li className="nav-item">
-         <a className="nav-link active">For You</a>
+         <a className="nav-link active" href="/">For You</a>
        </li>
        <li className="nav-item">
-         <a className="nav-link">Trending</a>
+         <a className="nav-link" href="/">Trending</a>
        </li>
        <li className="nav-item">
-         <a className="nav-link">News</a>
+         <a className="nav-link" href="/">News</a>
        </li>
      </ul>
      <div className="position-relative mb-2">
-       <img src="../../images/web_dev_rocket_launch.jpeg" className="w-100"/>
+       <img src="../../images/web_dev_rocket_launch.jpeg" className="w-100" alt= "rocket ready for launch"/>
        <h1 className="position-absolute wd-nudge-up text-white">
          SpaceX Starship</h1>
      </div>
