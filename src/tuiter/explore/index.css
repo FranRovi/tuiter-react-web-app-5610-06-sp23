@@ -11,8 +11,12 @@
     padding-bottom: 20px;
 }
  
-.wd-nudge-up {
-    bottom: 18px;
+.wd-title-overlap-exp {
+    bottom: 10px;
+    left: 25px;
+}
+.wd-mglass-input {
+    bottom: 17px;
     left: 25px;
 }
  

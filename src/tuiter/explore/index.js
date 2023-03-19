@@ -9,7 +9,7 @@ const ExploreComponent = () => {
          <input placeholder="Search Tuiter"
                 className="form-control rounded-pill ps-5"/>
          <i className="bi bi-search position-absolute 
-                       wd-nudge-up"></i>
+                       wd-mglass-input"></i>
        </div>
        <div className="col-1">
          <i className="wd-bottom-4 text-primary float-end bi 
@@ -29,7 +29,7 @@ const ExploreComponent = () => {
      </ul>
      <div className="position-relative mb-2">
        <img src="../../images/web_dev_rocket_launch.jpeg" className="w-100" alt= "rocket ready for launch"/>
-       <h1 className="position-absolute wd-nudge-up text-white">
+       <h1 className="position-absolute wd-title-overlap-exp text-white">
          SpaceX Starship</h1>
      </div>
      <PostSummaryList/>

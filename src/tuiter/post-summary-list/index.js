@@ -1,8 +1,12 @@
-import React from "react";
-import postsArray from '../post-summary-list/posts.json';
+import React from 'react';
+// import postsArray from '../post-summary-list/posts.json';
+import { useSelector } from 'react-redux'
 import PostSummaryItem from "../post-summary/post-summary-item";
 
 const PostSummaryList = () => {
+  const postsArray = useSelector(state => state.posts)
+  console.log(postsArray);
+
   return(
     <>
       <ul className="list-group list-unstyled">
@@ -18,7 +22,7 @@ const PostSummaryList = () => {
               </li>
             )
           }
-    </ul>
+      </ul>
     </>
     
   );
