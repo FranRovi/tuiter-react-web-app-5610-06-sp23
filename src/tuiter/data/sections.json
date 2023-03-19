@@ -1,0 +1,29 @@
+[
+    {
+       "_id": 1, "label": "", "path": "", "href": "/", "icon": "FaTwitter" 
+    },
+    {
+        "_id": 2, "label": " Home", "path": "home", "href": "../HomeComponent/index.html", "icon": "home"
+    },
+    {
+       "_id": 3, "label": " Explore", "path": "explore", "href": "../ExploreComponent/index.html", "icon": "globe" 
+    },
+    {
+        "_id": 4, "label": " Notifications", "path": "notifications", "href": "/", "icon": "bell"
+    },
+    {
+        "_id": 5, "label": " Messages", "path": "messages", "href": "/", "icon": "envelope" 
+    },
+    {
+        "_id": 6, "label": " Bookmarks", "path": "bookmarks", "href": "/", "icon": "bookmark"
+    },
+    {
+        "_id": 7, "label": " Lists", "path": "lists", "href": "/", "icon": "list"
+    },
+    {
+        "_id": 8, "label": " Profile", "path": "profile", "href": "../ProfileComponent/index.html", "icon": "user" 
+    },
+    {
+        "_id": 9, "label": " More", "path": "more", "href": "./", "icon": "circle"
+    }
+]

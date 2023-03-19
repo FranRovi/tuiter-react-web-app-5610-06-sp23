@@ -1,0 +1,35 @@
+.wd-nudge-up {
+    bottom: -25px;
+    left: 50px;
+}
+
+.wd-slide-r {
+    bottom: -15px;
+    right: 50px;
+    /* color: white */
+}
+
+.wd-txt-w{
+    color: white;
+}
+
+.wd-border{
+    border-color: #6c757d;
+    border-style: solid;
+    border-width:1px;
+    
+}
+
+.wd-no-border{
+    border-style: none;
+}
+
+.wd-word-wrap{
+    word-wrap: normal;
+}
+
+/* input:focus, textarea:focus, select:focus{
+    outline: none;
+} */
+
+
