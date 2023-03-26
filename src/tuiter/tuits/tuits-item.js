@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import TuitStat from './tuit-stats'; 
 import { AiFillCheckCircle } from "react-icons/ai";
 import { useDispatch } from 'react-redux';
 import { deleteTuit } from '../reducers/tuits-reducers';
@@ -22,6 +23,7 @@ const TuitItem = (tuit) => {
                     <p className="wd-lh wd-fs pt-2">{tuit.description}{tuit.color === "" ? "" : <span className='text-primary'>{tuit.color}</span>}</p>
                 </div>
             </div>
+            <TuitStat id={tuit._id}/>
         </li>
     );
 };

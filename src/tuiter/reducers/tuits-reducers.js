@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import tuits from '../home/home-tuits.json';
+import tuits from '../tuits/tuits.json';
 
 const currentUser = {
     "userName": "NASA",
@@ -24,22 +24,29 @@ const tuitsSlice = createSlice(
         initialState: tuits,
         reducers: {
             deleteTuit(state, action){
+                console.log(action);
                 const index = state.findIndex(tuit => tuit._id === action.payload);
                 console.log(action.payload); 
                 state.splice(index, 1);
             },
             createTuit(state, action){
+                console.log(action.payload);
                 state.unshift({
                     ...action.payload,
                     ...templateTuit,
+                    description: action.payload.tuit,
                     _id: (new Date()).getTime(),
                 })
-            }
-            
-        }
+            },
+            findTuit(state, action) {
+                console.log(action);
+                const index = state.findIndex(tuit => tuit._id === action.payload);
+                console.log(index);
+            },
+        },
     }
 );
 
 
-export const { createTuit, deleteTuit } = tuitsSlice.actions; 
+export const { createTuit, deleteTuit, findTuit, toogleLike, updateCounter } = tuitsSlice.actions; 
 export default tuitsSlice.reducer;

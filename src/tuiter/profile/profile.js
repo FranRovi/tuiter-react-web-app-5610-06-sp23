@@ -1,6 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { BsCalendar3 } from "react-icons/bs";
+import { IoBalloonOutline } from "react-icons/io5";
+
+import { MdOutlinePlace } from "react-icons/md";
+//import { BsCalendar3,  MdOutlinePlace, IoBallonOutline } from "react-icons/ai";
 import './index.css';
 
 const ProfileComponent = () => {
@@ -10,11 +15,9 @@ const ProfileComponent = () => {
 
     const backClickHandler = () => {
         navigate('/tuiter')
-        //console.log("go back");
     }
     const editProfileClickHandler = () => {
         navigate('/tuiter/edit')
-        //console.log("go back");
     }
     return(
         <>
@@ -29,9 +32,9 @@ const ProfileComponent = () => {
                         <p className="text-muted pt-0">{profile.tweets} tweets</p>
                     </div>
                     <div className='position-relative row'>
-                        <img src={profile.bannerPicture} width={profile.banner_width} height={profile.banner_height} />
+                        <img src={profile.bannerPicture} width={profile.banner_width} height={profile.banner_height} alt="user's banner background" />
                         <div>
-                            <img src={profile.profilePicture} width={profile.profile_width} height={profile.profile_height} className='position-absolute wd-nudge-up col-2'/>
+                            <img src={profile.profilePicture} width={profile.profile_width} height={profile.profile_height} alt="user's avatar icon" className='position-absolute wd-nudge-up col-2'/>
                             <button className="position-absolute btn btn-warning wd-slide-r" onClick={editProfileClickHandler}><span className="wd-txt-w">Edit profile</span></button>
                         </div>
                         
@@ -43,9 +46,9 @@ const ProfileComponent = () => {
                     </div>
                     <div>
                         <div className='row'>
-                            <p className="col-4 text-muted">{profile.location}</p>
-                            <p className="col-4 text-muted">Born: {profile.dateOfBirth}</p>
-                            <p className="col-4 text-muted">Joined: {profile.dateJoined}</p>
+                            <p className="col-4 text-muted"><MdOutlinePlace/> {profile.location}</p>
+                            <p className="col-4 text-muted"><IoBalloonOutline/> Born: {profile.dateOfBirth}</p>
+                            <p className="col-4 text-muted"><BsCalendar3/> Joined: {profile.dateJoined}</p>
                         </div>
                         <div className='row'>
                             <p className="col-3"><span className='fw-bolder'>{profile.followingCount}</span> Following</p>

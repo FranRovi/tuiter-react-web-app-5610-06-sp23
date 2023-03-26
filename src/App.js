@@ -8,16 +8,16 @@ import {Routes, Route} from "react-router";
 
 function App() {
   return (
-    <BrowserRouter> 
-      <div className="container">
-        <Routes>
-          <Route index path="/*" element={<Labs/>}/>
-          <Route path="/hello" element={<HelloWorld/>}/>
-          <Route path="/tuiter/*" element={<Tuiter/>}/>
-        </Routes>
-          
-      </div>
-    </BrowserRouter> 
+      <BrowserRouter> 
+        <div className="container">
+          <Routes>
+            <Route index path="/*" element={<Labs/>}/>
+            <Route path="/hello" element={<HelloWorld/>}/>
+            <Route path="/tuiter/*" element={<Tuiter/>}/>
+          </Routes>
+            
+        </div>
+      </BrowserRouter>
   );
 }
 
