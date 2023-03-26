@@ -1,51 +1,50 @@
 import React from 'react';
-// import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { findTuit } from '../reducers/tuits-reducer';
+import { likeTuit } from '../reducers/tuits-reducer';
+
 import { AiOutlineMessage,  AiFillHeart, AiOutlineHeart, AiOutlineRetweet, AiOutlineUpload } from "react-icons/ai";
 
-const TuitStats = (tuit) => {
-    console.log(tuit.id);
+const TuitStats = (props) => {
     const dispatch = useDispatch();
-    const singleTuit = () => {
-        dispatch(findTuit(tuit.id));
+    const homeTuitsArray = useSelector(state =>state.tuits);
+    const singleTuitIndex = homeTuitsArray.findIndex(tuit => tuit._id === props.id);
+    const singleTuitId = homeTuitsArray[singleTuitIndex]._id;
+    console.log("Single Tuit ID: " + singleTuitId)
+    const likeClickHandler = () => {
+        console.log("I'm being clicked");
+        if (homeTuitsArray[singleTuitIndex].liked) {
+            //
+            console.log("Dispatched liked tuit"); 
+            dispatch(likeTuit({type: 'LIKE_TUIT', singleTuitId} ));
+        } else {
+            console.log("Dispatched unliked tuit"); 
+            dispatch(likeTuit({type: 'UNLIKE_TUIT', singleTuitId} ));
+        }
     }
-    console.log(singleTuit);
-    console.log(singleTuit.likes);
-    //const tuit = useSelector(state => props.id === tuit._id);
-    //state.findIndex(tuit => tuit._id === action.payload);
-    //console.log(tuit);
-    //console.log(props);
-    //
-    //console.log("Id of tuit: " + tuitsArray[props.id]);
-    // const singleTuit = tuitsArray[0];
-    // console.log(singleTuit);
-    // console.log(singleTuit._id);
 
     return (
         <>
-
             <div className='container'>
                 <div className='row'>
                     <div className='col-2'>
                     </div>
                     <div className='col-2'>
-                        <AiOutlineMessage/> <span>{tuit.retuits}</span>
+                        <AiOutlineMessage/> <span>{homeTuitsArray[singleTuitIndex].retuits}</span>
                     </div>
                     <div className='col-2' >
-                        <AiOutlineRetweet/> <span>{tuit.replies}</span>
+                        <AiOutlineRetweet/> <span>{homeTuitsArray[singleTuitIndex].replies}</span>
                     </div>
-                    <div className='col-2'>
+                    <div className='col-2' onClick={() => likeClickHandler(homeTuitsArray[singleTuitIndex]._id)}>
                         {
-                            tuit.liked === true ? <AiFillHeart style={{color:'red'}}/> : <AiOutlineHeart/>
-                        }<span>{tuit.likes}</span>
+                            homeTuitsArray[singleTuitIndex].liked === true ? <AiFillHeart style={{color:'red'}}/> : <AiOutlineHeart/>
+                        }<span>{homeTuitsArray[singleTuitIndex].likes}</span>
                     </div>
                     <div className='col-2'>
                         <AiOutlineUpload/>
                     </div>
                 </div>
             </div>
-
         </>
     )
 }

@@ -4,7 +4,7 @@ import TuitItem from "./tuits-item";
 
 const TuitsList = () => {
     const homeTuitsArray = useSelector(state => state.tuits);
-    console.log(homeTuitsArray);
+    //console.log(homeTuitsArray);
     return(
         <>
             <ul className="list-group list-unstyled">

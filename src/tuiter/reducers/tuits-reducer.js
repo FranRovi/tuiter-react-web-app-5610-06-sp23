@@ -11,10 +11,10 @@ const templateTuit = {
     ...currentUser,
     "description": "Space",
     "time": "2h",
-    "liked": false,
-    "replies": 100,
-    "retuits": 100,
-    "likes": 100,
+    "liked": true,
+    "replies": 897,
+    "retuits": 789,
+    "likes": 987,
 }
    
 const tuitsSlice = createSlice(
@@ -27,7 +27,6 @@ const tuitsSlice = createSlice(
                 state.splice(index, 1);
             },
             createTuit(state, action){
-                console.log(action.payload);
                 state.unshift({
                     _id: (new Date()).getTime(),
                     ...action.payload,
@@ -35,15 +34,51 @@ const tuitsSlice = createSlice(
                     description: action.payload.tuit,
                 })
             },
-            findTuit(state, action) {
+            likeTuit(state, action) {
+                console.log("like Tuit REDUCER Function")
                 console.log(action.payload);
-                const index = state.findIndex(tuit => tuit._id === action.payload);
-                console.log(index);
+
+                switch(action.payload.type) {
+                    case 'LIKE_TUIT':
+                        console.log("REDUCER LIKE TUIT");
+                        console.log(action.payload.singleTuitId);
+                        // const index = state.find(tuit => tuit._id === action.payload.singleTuitId);
+                        // console.log(index);
+                        // console.log(action.payload.singleTuitId);
+                        // 1 copy the current state
+                        // 2 update toggle the liked attribute
+                        // 3 decrement by one the number of likes
+                        
+
+                        break;
+                    case 'UNLIKE_TUIT':
+                        console.log("REDUCER UNLIKE TUIT");
+                        console.log(action.payload.singleTuitId);
+                        // const index = state.find(tuit => tuit._id === action.payload.singleTuitId);
+                        //console.log(action.payload.singleTuitId);
+                        // 1 copy the current state
+                        // 2 update toggle the liked attribute
+                        // 3 incremenet by one the number of likes
+                        
+                        break;
+                    default:
+                        return state;
+
+                }
+
+                // if (state.singleTuit.liked) {
+                //     state.singleTuit.liked = !state.singleTuit.liked;
+                //         state.singleTuit.likes -= 1;
+                // } else {
+                //     state.singleTuit.liked = !state.singleTuit.liked;
+                //         state.singleTuit.likes += 1;
+                // }
+                // ;
             },
         },
     }
 );
 
 
-export const { createTuit, deleteTuit, findTuit } = tuitsSlice.actions; 
+export const { createTuit, deleteTuit, likeTuit } = tuitsSlice.actions; 
 export default tuitsSlice.reducer;

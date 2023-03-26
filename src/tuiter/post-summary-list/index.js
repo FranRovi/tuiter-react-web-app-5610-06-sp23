@@ -4,7 +4,7 @@ import PostSummaryItem from "../post-summary/post-summary-item";
 
 const PostSummaryList = () => {
   const postsArray = useSelector(state => state.posts)
-  console.log(postsArray);
+  //console.log(postsArray);
 
   return(
     <>

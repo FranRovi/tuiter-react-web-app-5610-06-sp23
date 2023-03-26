@@ -107,8 +107,8 @@ const EditProfileComponent = () => {
                 </div>
             </div>
             <br/>
-            {userInfo.lastName} <br/>
-            {userInfo.firstName}
+            {/* {userInfo.lastName} <br/>
+            {userInfo.firstName} */}
         </>
     )
 }

@@ -6,8 +6,6 @@ import { useDispatch } from 'react-redux';
 import { deleteTuit } from '../reducers/tuits-reducer';
 
 const TuitItem = (tuit) => {
-    console.log(tuit);
-    console.log(tuit.id);
     const dispatch = useDispatch();
     const deleteTuitHandler = () => {
         dispatch(deleteTuit(tuit.id));
@@ -24,7 +22,7 @@ const TuitItem = (tuit) => {
                     <p className="wd-lh wd-fs pt-2">{tuit.description}{tuit.color === "" ? "" : <span className='text-primary'>{tuit.color}</span>}</p>
                 </div>
             </div>
-            <TuitStat id={tuit.id}/>
+            <TuitStat id={tuit.id} />
         </li>
     );
 };
