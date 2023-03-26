@@ -35,45 +35,23 @@ const tuitsSlice = createSlice(
                 })
             },
             likeTuit(state, action) {
-                console.log("like Tuit REDUCER Function")
-                console.log(action.payload);
+                const tuit = state.find(tuit => tuit._id === action.payload.singleTuitId);
 
                 switch(action.payload.type) {
                     case 'LIKE_TUIT':
-                        console.log("REDUCER LIKE TUIT");
-                        console.log(action.payload.singleTuitId);
-                        // const index = state.find(tuit => tuit._id === action.payload.singleTuitId);
-                        // console.log(index);
-                        // console.log(action.payload.singleTuitId);
-                        // 1 copy the current state
-                        // 2 update toggle the liked attribute
-                        // 3 decrement by one the number of likes
-                        
+                        tuit.likes--;
+                        tuit.liked = false;
+                        break;
 
-                        break;
                     case 'UNLIKE_TUIT':
-                        console.log("REDUCER UNLIKE TUIT");
-                        console.log(action.payload.singleTuitId);
-                        // const index = state.find(tuit => tuit._id === action.payload.singleTuitId);
-                        //console.log(action.payload.singleTuitId);
-                        // 1 copy the current state
-                        // 2 update toggle the liked attribute
-                        // 3 incremenet by one the number of likes
-                        
+                        tuit.likes++;
+                        tuit.liked = true;
                         break;
+
                     default:
                         return state;
 
                 }
-
-                // if (state.singleTuit.liked) {
-                //     state.singleTuit.liked = !state.singleTuit.liked;
-                //         state.singleTuit.likes -= 1;
-                // } else {
-                //     state.singleTuit.liked = !state.singleTuit.liked;
-                //         state.singleTuit.likes += 1;
-                // }
-                // ;
             },
         },
     }

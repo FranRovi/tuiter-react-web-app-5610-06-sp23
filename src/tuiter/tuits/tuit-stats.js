@@ -10,15 +10,10 @@ const TuitStats = (props) => {
     const homeTuitsArray = useSelector(state =>state.tuits);
     const singleTuitIndex = homeTuitsArray.findIndex(tuit => tuit._id === props.id);
     const singleTuitId = homeTuitsArray[singleTuitIndex]._id;
-    console.log("Single Tuit ID: " + singleTuitId)
     const likeClickHandler = () => {
-        console.log("I'm being clicked");
         if (homeTuitsArray[singleTuitIndex].liked) {
-            //
-            console.log("Dispatched liked tuit"); 
             dispatch(likeTuit({type: 'LIKE_TUIT', singleTuitId} ));
         } else {
-            console.log("Dispatched unliked tuit"); 
             dispatch(likeTuit({type: 'UNLIKE_TUIT', singleTuitId} ));
         }
     }

@@ -12,7 +12,6 @@ library.add(faUser, faHome, faBell, faEnvelope, faBookmark, faList, faCircle, fa
 const NavigationSidebar = () => {
   const {pathname} = useLocation();
   const sectionsArray = useSelector(state => state.sections);
-  console.log(sectionsArray);
   return(
     <>
       <div className="d-none d-xl-block">
