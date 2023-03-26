@@ -10,6 +10,7 @@ const TuitsList = () => {
             <ul className="list-group list-unstyled">
                 {   homeTuitsArray.map(tuit =>
                         <li key={tuit._id}><TuitItem
+                        id={tuit._id}
                         userName={tuit.userName}
                         handle={tuit.handle}
                         userIcon={tuit.userIcon}

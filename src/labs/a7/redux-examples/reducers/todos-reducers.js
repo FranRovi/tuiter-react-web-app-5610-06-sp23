@@ -25,7 +25,7 @@ const todosSlice = createSlice(
                 });
             },
             deleteTodo(state, action) {
-                const index = action.payload
+                const index = action.payload;
                 state.splice(index, 1)
             },
             todoDoneToggle(state, action) {

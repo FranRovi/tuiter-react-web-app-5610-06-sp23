@@ -1,5 +1,4 @@
 import React from 'react';
-// import postsArray from '../post-summary-list/posts.json';
 import { useSelector } from 'react-redux'
 import PostSummaryItem from "../post-summary/post-summary-item";
 
@@ -11,7 +10,7 @@ const PostSummaryList = () => {
     <>
       <ul className="list-group list-unstyled">
           { 
-            postsArray.map(post => <li className="" key={post._id}>
+            postsArray.map(post => <li key={post._id}>
               <PostSummaryItem
                 time={post.time}
                 image={post.image}
