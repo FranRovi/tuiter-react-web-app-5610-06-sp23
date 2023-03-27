@@ -5,9 +5,13 @@ import { updateProfile } from '../reducers/profile-reducer';
 import './index.css';
 
 const EditProfileComponent = () => {
+    
     const  { profile } = useSelector(state => state.profile);
-    console.log(profile);
     const [userInfo, setUserInfo] = useState(profile);
+    const birthDate = profile.dateOfBirth;
+    const dateObject = new Date(birthDate);
+    const dateObjectSlice = dateObject.toISOString().slice(0, 10);
+    const [dob, setDob] = useState(birthDate);
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const name = profile.firstName + ' ' + profile.lastName;
@@ -17,22 +21,40 @@ const EditProfileComponent = () => {
     }
 
     const saveClickHandler = () => {
-        console.log(userInfo);
         dispatch(updateProfile(userInfo));
         navigate('/tuiter/profile')
     }
 
     const updateFirstName = () => {
-        //console.log(userInfo);
         setUserInfo(userInfo);
         dispatch(updateProfile(userInfo));
     }
 
     const updateLastName = () => {
-        //console.log(userInfo);
         setUserInfo(userInfo);
         dispatch(updateProfile(userInfo));
     }
+    const dateFormatter = (stringDate) => {
+        const stringDateSplit = (stringDate.split("-"));
+        const updatedDate = [stringDateSplit[1], stringDateSplit[2],stringDateSplit[0]];
+
+        const updatedDateStr = updatedDate[0]+ "/" + updatedDate[1] + "/" + updatedDate[2];
+        return updatedDateStr; 
+    }
+    
+    const dobChangeHandler = (e) => {
+        const value = e.target.value;
+        setDob(value);
+        const updatedDateStr = dateFormatter(value);
+        setDob(updatedDateStr);
+        
+        setUserInfo({
+            ...profile,
+            dateOfBirth: dob,
+        });
+        dispatch(updateProfile(userInfo));
+    }
+
     return(
         <>
             <h4>Edit</h4>
@@ -61,12 +83,10 @@ const EditProfileComponent = () => {
                                 (e) => setUserInfo({
                                     ...userInfo,
                                     firstName: e.target.value,
-                                    //lastName: e.target.value,
                                 })} onClick={()=>updateFirstName()}/>
                             <input className="w-50 wd-no-border p-1 float-flex" defaultValue={profile.lastName} onChange={
                                 (e) => setUserInfo({
                                     ...userInfo,
-                                    //firstName: e.target.value,
                                     lastName: e.target.value,
                                 })} onClick={()=>updateLastName()}/>
                         </div>
@@ -98,17 +118,12 @@ const EditProfileComponent = () => {
                     </div>
                     <div>
                         <label className="text-muted mt-3">Birth date &#183; <span className='text-primary'> Edit</span></label>
-                        <input className="w-100 wd-no-border" defaultValue={profile.dateOfBirth} onChange={(e) => setUserInfo({
-                                    ...profile,
-                                    dateOfBirth: e.target.value,
-                                })
-                            }/>
+                        <input className="w-100 wd-no-border" type="date" defaultValue={dateObjectSlice}  onChange={(e) => dobChangeHandler(e)}/>
                     </div>   
                 </div>
             </div>
             <br/>
-            {/* {userInfo.lastName} <br/>
-            {userInfo.firstName} */}
+            <p>Switch to professional</p>
         </>
     )
 }

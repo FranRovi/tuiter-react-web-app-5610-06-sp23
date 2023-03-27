@@ -3,15 +3,24 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { BsCalendar3 } from "react-icons/bs";
 import { IoBalloonOutline } from "react-icons/io5";
-
 import { MdOutlinePlace } from "react-icons/md";
-//import { BsCalendar3,  MdOutlinePlace, IoBallonOutline } from "react-icons/ai";
+
 import './index.css';
 
 const ProfileComponent = () => {
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+    ];
+
+    const numUpdate = (month) => {
+        return parseInt(month) - 1;
+    }
+
     const navigate = useNavigate();
     const { profile } = useSelector(state => state.profile);
-    console.log(profile);
+    const dob = profile.dateOfBirth;
+    const dateOfBirthSplit = dob.split(/[-/]/);    
+    const month = numUpdate(dateOfBirthSplit[0]);
+    const dateToDisplay = `${monthNames[month]} ${dateOfBirthSplit[1]}, ${dateOfBirthSplit[2]}`;
 
     const backClickHandler = () => {
         navigate('/tuiter')
@@ -47,7 +56,7 @@ const ProfileComponent = () => {
                     <div>
                         <div className='row'>
                             <p className="col-4 text-muted"><MdOutlinePlace/> {profile.location}</p>
-                            <p className="col-4 text-muted"><IoBalloonOutline/> Born: {profile.dateOfBirth}</p>
+                            <p className="col-4 text-muted"><IoBalloonOutline/> Born: {dateToDisplay}</p>
                             <p className="col-4 text-muted"><BsCalendar3/> Joined: {profile.dateJoined}</p>
                         </div>
                         <div className='row'>

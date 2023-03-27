@@ -17,7 +17,7 @@ const initialState = {
         "bio": "Software Developer with background in law. Currently enroll at Northeastern University Align program in CS.",
         "website": "youtube.com/webdevtv",
         "location": "Redwood City, CA",
-        "dateOfBirth": "Dec 1, 1984",
+        "dateOfBirth": "12/1/1984",
         "dateJoined": "July, 2016",
         "tweets": "7,914", 
         "followingCount": 340,
