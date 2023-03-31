@@ -1,7 +1,7 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
-import { likeTuit } from '../reducers/tuits-reducer';
+import { useSelector, useDispatch } from 'react-redux';
+// import { likeTuit } from '../reducers/tuits-reducer';
+import { updateTuitThunk } from '../../services/tuits-thunks';
 
 import { AiOutlineMessage,  AiFillHeart, AiOutlineHeart, AiOutlineRetweet, AiOutlineUpload } from "react-icons/ai";
 
@@ -9,12 +9,14 @@ const TuitStats = (props) => {
     const dispatch = useDispatch();
     const homeTuitsArray = useSelector(state =>state.tuits);
     const singleTuitIndex = homeTuitsArray.findIndex(tuit => tuit._id === props.id);
-    const singleTuitId = homeTuitsArray[singleTuitIndex]._id;
+    // const singleTuitId = homeTuitsArray[singleTuitIndex]._id;
     const likeClickHandler = () => {
         if (homeTuitsArray[singleTuitIndex].liked) {
-            dispatch(likeTuit({type: 'LIKE_TUIT', singleTuitId} ));
+            dispatch(updateTuitThunk({...homeTuitsArray[singleTuitIndex], likes: homeTuitsArray[singleTuitIndex].likes + 1 }))
+            // dispatch(likeTuit({type: 'LIKE_TUIT', singleTuitId} ));
         } else {
-            dispatch(likeTuit({type: 'UNLIKE_TUIT', singleTuitId} ));
+            // dispatch(likeTuit({type: 'UNLIKE_TUIT', singleTuitId} ));
+            dispatch(updateTuitThunk({...homeTuitsArray[singleTuitIndex], likes: homeTuitsArray[singleTuitIndex].dislikes + 1 }))
         }
     }
 

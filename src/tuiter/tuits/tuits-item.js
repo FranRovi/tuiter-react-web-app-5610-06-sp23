@@ -3,12 +3,14 @@ import "./index.css";
 import TuitStat from './tuit-stats'; 
 import { AiFillCheckCircle } from "react-icons/ai";
 import { useDispatch } from 'react-redux';
-import { deleteTuit } from '../reducers/tuits-reducer';
+// import { deleteTuit } from '../reducers/tuits-reducer';
+import { deleteTuitThunk } from "../../services/tuits-thunks";
 
 const TuitItem = (tuit) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = () => {
-        dispatch(deleteTuit(tuit.id));
+        // dispatch(deleteTuit(tuit.id));
+        dispatch(deleteTuitThunk(tuit.id));
     }
     return(
         <li className="list-group-item" key={tuit.id}>
