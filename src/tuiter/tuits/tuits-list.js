@@ -5,11 +5,11 @@ import { findAllTuitsThunk } from "../../services/tuits-thunks";
 
 const TuitsList = () => {
     const { tuits } = useSelector(state => state.tuitsData);
-    console.log(tuits);
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(findAllTuitsThunk());
+        // eslint-disable-next-line
     }, [])
 
     return(

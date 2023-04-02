@@ -1,14 +1,15 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
-import { updateTuitThunk, findAllTuitsThunk } from '../../services/tuits-thunks';
+import { updateTuitThunk } from '../../services/tuits-thunks';
 
 import { AiOutlineMessage,  AiFillHeart, AiOutlineHeart, AiOutlineRetweet, AiOutlineUpload } from "react-icons/ai";
 import { BsHandThumbsDown } from 'react-icons/bs';
 
 const TuitStats = (props) => {
     const tuit = props.tuit;
-    console.log(tuit);
+    const [tuitLike, setTuitLike ] = useState(props.tuit.likes);
+    const [tuitDislike, setTuitDislike ] = useState(props.tuit.dislikes);
 
     const dispatch = useDispatch();
     const likeClickHandler = () => {
@@ -16,12 +17,14 @@ const TuitStats = (props) => {
             ...tuit,
             likes: tuit.likes + 1
         }))
+        setTuitLike(tuitLike + 1);
     }
     const dislikeClickHandler = () => {
         dispatch(updateTuitThunk({
             ...tuit,
             dislikes: tuit.dislikes + 1
         }))
+        setTuitDislike(tuitDislike + 1);
     }
     return (
         <>
@@ -39,11 +42,11 @@ const TuitStats = (props) => {
                     </div>
                     <div className='col-2' onClick={likeClickHandler}>
                         {tuit.liked ? <AiFillHeart style={{color:'red'}}/> : <AiOutlineHeart/>}
-                        <span> {tuit.likes}</span> 
+                        <span> {tuitLike}</span> 
                     </div>
                     <div className='col-2' onClick={dislikeClickHandler}>
                         <BsHandThumbsDown/>
-                        <span> {tuit.dislikes}</span> 
+                        <span> {tuitDislike}</span> 
                     </div>
                     <div className='col-2'>
                         <AiOutlineUpload/>
