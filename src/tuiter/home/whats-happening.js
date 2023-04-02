@@ -9,7 +9,17 @@ const WhatsHappening = () => {
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
         const newTuit = {
-            tuit: whatsHappening
+            username: "NASA",
+            handle: "@spacex",
+            time: "3h",
+            image: "../../images/web_dev_nasa_logo.png",
+            title: "Cybertrucks driving up Olympus Mons",
+            description: whatsHappening,
+            retuits: 150,
+            likes: 350,
+            dislikes: 10,
+            replies: 100,
+
         }
         dispatch(createTuitThunk(newTuit));
     }

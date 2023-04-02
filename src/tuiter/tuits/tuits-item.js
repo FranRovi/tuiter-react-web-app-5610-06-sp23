@@ -16,7 +16,7 @@ const TuitItem = (tuit) => {
         <li className="list-group-item" key={tuit.id}>
             <div className="row">
                 <div className="col-2">
-                    <img className="rounded-circle ms-2 wd-img-avatar" src={tuit.userIcon} alt=""/>
+                    <img className="rounded-circle ms-2 wd-img-avatar" src={tuit.image} alt=""/>
                 </div>
             
                 <div className="col-10 pos-relative">
@@ -24,7 +24,7 @@ const TuitItem = (tuit) => {
                     <p className="wd-lh wd-fs pt-2">{tuit.description}{tuit.color === "" ? "" : <span className='text-primary'>{tuit.color}</span>}</p>
                 </div>
             </div>
-            <TuitStat id={tuit.id} />
+            <TuitStat tuit={tuit} />
         </li>
     );
 };
