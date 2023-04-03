@@ -4,10 +4,10 @@ const NavigationSidebar = (highlight = "Explore") => {
         label: '', href: '/', icon: 'fab fa-twitter style="color:white"', 
       },
       {
-        label: ' Home', href: '../HomeComponent/index.html', icon: 'fas fa-home style="color:white"',
+        label: ' Home', href: '/', icon: 'fas fa-home style="color:white"',
       },
       {
-        label: ' Explore', href: '../ExploreComponent/index.html', icon: 'fas fa-hashtag style="color:white"', 
+        label: ' Explore', href: '/', icon: 'fas fa-hashtag style="color:white"', 
       },
       {
         label: ' Notifications', href: '/', icon: 'fas fa-bell style="color:white"',
