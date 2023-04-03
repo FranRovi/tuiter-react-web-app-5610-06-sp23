@@ -34,11 +34,11 @@ const TuitStats = (props) => {
                     </div>
                     <div className='col-2'>
                         <AiOutlineMessage/> 
-                        <span>{tuit.retuits}</span> 
+                        <span> {tuit.retuits}</span> 
                     </div>
                     <div className='col-2' >
                         <AiOutlineRetweet/>
-                        <span>{tuit.replies}</span> 
+                        <span> {tuit.replies}</span> 
                     </div>
                     <div className='col-2' onClick={likeClickHandler}>
                         {tuit.liked ? <AiFillHeart style={{color:'red'}}/> : <AiOutlineHeart/>}
