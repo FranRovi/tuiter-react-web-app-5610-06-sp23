@@ -1,6 +1,8 @@
 import axios from 'axios';
-// const TUITS_API = 'http://localhost:4000/api/tuits';
-const TUITS_API ="https://franrovi-tuiter-node-server-app-5610-06.onrender.com/api/tuits"
+const TUITS_API = 'http://localhost:4000/api/tuits';
+// const TUITS_API ="https://franrovi-tuiter-node-server-app-5610-06.onrender.com/api/tuits"
+
+// ADJUST to talk with 
 
 
 export const findAllTuits = async () => {
