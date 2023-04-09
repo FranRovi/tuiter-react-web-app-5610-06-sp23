@@ -9,22 +9,33 @@ import { BsHandThumbsDown } from 'react-icons/bs';
 const TuitStats = (props) => {
     const tuit = props.tuit;
     const [tuitLike, setTuitLike ] = useState(props.tuit.likes);
+    const [tuitLiked, setTuitLiked ] = useState(props.tuit.liked);
     const [tuitDislike, setTuitDislike ] = useState(props.tuit.dislikes);
+    //const toogleLiked = () => {
+      //  return tuit.liked === true ? false : true;
+    //}
 
     const dispatch = useDispatch();
     const likeClickHandler = () => {
+        //setTuitLiked(toogleLiked());
         dispatch(updateTuitThunk({
             ...tuit,
-            likes: tuit.likes + 1
+            likes: tuit.likes + 1,
+            //liked: tuit.liked
+            liked: true
         }))
         setTuitLike(tuitLike + 1);
+        setTuitLiked(true);
+        //setTuitLiked(tuitLiked);
     }
     const dislikeClickHandler = () => {
         dispatch(updateTuitThunk({
             ...tuit,
-            dislikes: tuit.dislikes + 1
+            dislikes: tuit.dislikes + 1,
+            liked: false
         }))
         setTuitDislike(tuitDislike + 1);
+        setTuitLiked(false);
     }
     return (
         <>
@@ -41,7 +52,7 @@ const TuitStats = (props) => {
                         <span> {tuit.replies}</span> 
                     </div>
                     <div className='col-2' onClick={likeClickHandler}>
-                        {tuit.liked ? <AiFillHeart style={{color:'red'}}/> : <AiOutlineHeart/>}
+                        {tuitLiked ? <AiFillHeart style={{color:'red'}}/> : <AiOutlineHeart/>}
                         <span> {tuitLike}</span> 
                     </div>
                     <div className='col-2' onClick={dislikeClickHandler}>

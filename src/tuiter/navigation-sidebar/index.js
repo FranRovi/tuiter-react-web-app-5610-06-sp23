@@ -43,7 +43,6 @@ const NavigationSidebar = () => {
         </ul>
       </div> 
     </>
-    
   )
 };
 
