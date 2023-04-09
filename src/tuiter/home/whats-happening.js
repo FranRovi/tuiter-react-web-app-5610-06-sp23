@@ -9,7 +9,7 @@ const WhatsHappening = () => {
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
         const newTuit = {
-            username: "NASA",
+            userName: "NASA",
             handle: "@spacex",
             time: "3h",
             image: "../../images/web_dev_nasa_logo.png",
@@ -17,6 +17,7 @@ const WhatsHappening = () => {
             description: whatsHappening,
             retuits: 150,
             likes: 350,
+            liked: false,
             dislikes: 10,
             replies: 100,
 

@@ -12,7 +12,7 @@ const WhoToFollowList = () => {
           <h4>Who to follow</h4>
         </li>
           { 
-            whoArray.map(who => <li className=""  key={who._id}>
+            whoArray.map(who => <li key={who._id}>
                 <WhoToFollowListItem
               userName={who.userName}
               handle={who.handle}
